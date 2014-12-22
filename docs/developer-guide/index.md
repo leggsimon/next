@@ -23,3 +23,4 @@ All Next applications use `make` and all implement the following `make` commands
 - `make clean` cleans the checkout of any uncommited files, such as `node_modules` and built JavaScript and CSS files.
 - `make install` installs dependencies
 - `make deploy` deploys the application (you may need to environment variables for this to run successfully)
+- `make run` runs the application locally (usually on port `localhost:5050`)
