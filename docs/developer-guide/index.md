@@ -12,6 +12,8 @@ Almost all Next applications rely on the following tools installed globally on d
 - [Origami Build Tools](https://github.com/Financial-Times/origami-build-tools/)
 - [Next Router](http://git.svc.ft.com:8080/projects/NEXT/repos/router/browse)
 
+Many applications also need a Content API key stored in a file in your home directory `~/.ftapi`.
+
 # CDN, Routing and the Registry
 
 // TODO: Explain and add architecture diagram
@@ -23,4 +25,15 @@ All Next applications use `make` and all implement the following `make` commands
 - `make clean` cleans the checkout of any uncommited files, such as `node_modules` and built JavaScript and CSS files.
 - `make install` installs dependencies
 - `make deploy` deploys the application (you may need to environment variables for this to run successfully)
-- `make run` runs the application locally (usually on port `localhost:5050`)
+- `make run` runs the application locally (usually on port `localhost:5050`).
+
+## Typical develoment workflow
+
+- Identify something on https://next.ft.com that needs changing.
+- Use the [Service Registry](http://next-registry.ft.com/) by comparing the URL of the page that needs changing to the regular expression patterns in the second column.
+- `git clone` the repository corresponding to that application and `cd` into it.
+- Run `make install` to install the dependencies of that application.
+- Ensure the application runs locally with `make run` and going to the URL of the page needing changes.  Note: normally, `make run` will run the whole site with *just the application you have checked out* running on your machine, proxying everything else to live.
+- Create a new branch and make the desire change.
+- Commit that change and create a pull request back to that application.
+- Drop a note in the Next rooms on [Slack](https://financialtimes.slack.com/messages/ft-next/), HipChat or, if you have an @ft.com email address, next.team@ft.com.
