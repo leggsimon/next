@@ -1,6 +1,6 @@
 name: Next
 pygments: true
 relative_permalinks: false
-baseurl:
+baseurl: /next/
 exclude: [bower_components, scss, node_modules, bower.json, Gruntfile.js, package.json, README.md]
 markdown: kramdown
