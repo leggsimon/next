@@ -7,7 +7,7 @@ permalink: /docs/developer-guide/
 
 # Developer guide
 
-Almost all Next applications rely on the following tools, installed globally on development machines.  Please ensure both of these are successfully installed onto your development environment first:-
+Almost all Next applications rely on the following tools installed globally on development machines.  Please ensure both of these are successfully installed onto your development environment first:-
 
 - [Origami Build Tools](https://github.com/Financial-Times/origami-build-tools/)
 - [Next Router](https://github.com/Financial-Times/next-router)
