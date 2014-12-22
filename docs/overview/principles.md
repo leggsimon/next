@@ -23,7 +23,7 @@ Every layer of Next, from the CDN to the individual applications, should be simp
 
 ## 4. No opinion on how you should build your application
 
-Although most of Next is built with Node.js and maintain tools that make writing Next applications with JavaScript easier, we do not force developers to use that or any other language for their applications' backend.
+Although most of Next is built with Node.js and we maintain tools that make writing Next applications with JavaScript easier, we do not force developers to use that or any other language for their applications' backend.
 
 ## 5. Future-proof
 
