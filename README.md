@@ -1,6 +1,6 @@
 ## This is a gh-pages branch
 
-Please visit https://financialtimes.github.io/next to view the site
+Please visit https://financial-times.github.io/next to view the site
 
 ## Building
 
