@@ -27,7 +27,7 @@ Although most of Next is built with Node.js and we maintain tools that make writ
 
 ## 5. Future-proof
 
-We are building Next with today's best practises whilst keeping in mind emerging technologies that will in the future enable to us to build richer, faster and more integrated user experiences in the future.
+We are building Next with today's best practises whilst keeping in mind emerging technologies that will enable to us to build richer, faster and more integrated user experiences in the future.
 
 ## 6. Encouragement and evangelism
 
