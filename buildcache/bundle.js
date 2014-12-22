@@ -9650,46 +9650,45 @@ var now = isNative(now = Date.now) && now || function() {
 module.exports = now;
 
 },{"../internals/isNative":5}],10:[function(require,module,exports){
-/*global require, exports*/
+/*global exports*/
 'use strict';
 
-function getClosestMatch (el, selector) {
-
-    while (el) {
-        if (el.matches(selector)) {
-            return el;
-        } else {
-            el = el.parentElement;
-        }
-    }
-    return false;
+function getClosestMatch(el, selector) {
+	while (el) {
+		if (el.matches(selector)) {
+			return el;
+		} else {
+			el = el.parentElement;
+		}
+	}
+	return false;
 }
 
-function getIndex (el) {
-
-    var i = 0;
-    if (el && typeof el === 'object' && el.nodeType === 1) {
-        while (el.previousSibling) {
-            el = el.previousSibling;
-            if (el.nodeType === 1) {
-                ++i;
-            }
-        }
-        return i;
-    }
+function getIndex(el) {
+	var i = 0;
+	if (el && typeof el === 'object' && el.nodeType === 1) {
+		while (el.previousSibling) {
+			el = el.previousSibling;
+			if (el.nodeType === 1) {
+				++i;
+			}
+		}
+		return i;
+	}
 }
 
 exports.getClosestMatch = getClosestMatch;
 exports.getIndex = getIndex;
+
 },{}],11:[function(require,module,exports){
 /*global require,module*/
 'use strict';
 
-var oHeader = require('./src/js/Header'),
-    constructAll = function() {
-        oHeader.init();
-        document.removeEventListener('o.DOMContentLoaded', constructAll);
-    };
+var oHeader = require('./src/js/Header');
+var	constructAll = function() {
+	oHeader.init();
+	document.removeEventListener('o.DOMContentLoaded', constructAll);
+};
 
 document.addEventListener('o.DOMContentLoaded', constructAll);
 
@@ -9700,516 +9699,517 @@ module.exports = oHeader;
 "use strict";
 
 var DomDelegate = require("./../../../ftdomdelegate/lib/delegate.js"),
-    oHierarchicalNav = require("./../../../o-hierarchical-nav/main.js");
+	oHierarchicalNav = require("./../../../o-hierarchical-nav/main.js");
 
 function Header(rootEl) {
 
-    var bodyDelegate,
-        // Gets all nav elements in the header
-        hierarchicalNavEls = [
-            rootEl.querySelector('.o-ft-header__nav--primary-theme'),
-            rootEl.querySelector('.o-ft-header__nav--secondary-theme'),
-            rootEl.querySelector('.o-ft-header__nav--tools-theme')
-        ].filter(function(el) {
-            /* 
-            *  Overflow is hidden by default on the tools and primary theme for it to resize properly on core experience
-            *  where level 2 and 3 menus won't appear anyway, but in primary experience they do need to appear. We do this
-            *  here instead of the map function in init because this needs to be applied regardless of the nav having been
-            *  initialized previously, like when the o.DOMContententLoaded event is dispatched
-            */
-            if (el) {
-                el.style.overflow = 'visible';
-            }
-            return el && el.nodeType === 1 && !el.hasAttribute('data-o-hierarchical-nav--js');
-        }),
-        hierarchicalNavs = [];
+	var bodyDelegate,
+		// Gets all nav elements in the header
+		hierarchicalNavEls = [
+			rootEl.querySelector('.o-ft-header__nav--primary-theme'),
+			rootEl.querySelector('.o-ft-header__nav--secondary-theme'),
+			rootEl.querySelector('.o-ft-header__nav--tools-theme')
+		].filter(function(el) {
+			/**
+			 * Overflow is hidden by default on the tools and primary theme for it to resize properly on core experience
+			 * where level 2 and 3 menus won't appear anyway, but in primary experience they do need to appear. We do this
+			 * here instead of the map function in init because this needs to be applied regardless of the nav having been
+			 * initialized previously, like when the o.DOMContententLoaded event is dispatched
+			 */
+			if (el) {
+				el.style.overflow = 'visible';
+			}
+			return el && el.nodeType === 1 && !el.hasAttribute('data-o-hierarchical-nav--js');
+		}),
+		hierarchicalNavs = [];
 
-    function init() {
-        if (!rootEl) {
-            rootEl = document.body;
-        } else if (!(rootEl instanceof HTMLElement)) {
-            rootEl = document.querySelector(rootEl);
-        }
-        rootEl.setAttribute('data-o-ft-header--js', '');
-        bodyDelegate = new DomDelegate(document.body);
-        hierarchicalNavs = hierarchicalNavEls.map(function(el) {
-            return new oHierarchicalNav(el);
-        });
-    }
+	function init() {
+		if (!rootEl) {
+			rootEl = document.body;
+		} else if (!(rootEl instanceof HTMLElement)) {
+			rootEl = document.querySelector(rootEl);
+		}
+		rootEl.setAttribute('data-o-ft-header--js', '');
+		bodyDelegate = new DomDelegate(document.body);
+		hierarchicalNavs = hierarchicalNavEls.map(function(el) {
+			return new oHierarchicalNav(el);
+		});
+	}
 
-    // Release header and all its navs from memory
-    function destroy() {
-        bodyDelegate.destroy();
-        for (var c = 0, l = hierarchicalNavs.length; c < l; c++) {
-            if (hierarchicalNavs[c]) {
-                hierarchicalNavs[c].destroy();
-            }
-        }
-        rootEl.removeAttribute('data-o-ft-header--js');
-    }
+	// Release header and all its navs from memory
+	function destroy() {
+		bodyDelegate.destroy();
+		for (var c = 0, l = hierarchicalNavs.length; c < l; c++) {
+			if (hierarchicalNavs[c]) {
+				hierarchicalNavs[c].destroy();
+			}
+		}
+		rootEl.removeAttribute('data-o-ft-header--js');
+	}
 
-    init();
+	init();
 
-    this.destroy = destroy;
+	this.destroy = destroy;
 
 }
 
 // Initializes all header elements in the page or whatever element is passed to it
 Header.init = function(el) {
-    if (!el) {
-        el = document.body;
-    } else if (!(el instanceof HTMLElement)) {
-        el = document.querySelector(el);
-    }
-    var headerEls = el.querySelectorAll('[data-o-component="o-ft-header"]:not([data-o-ft-header--js])'),
-        headers = [];
-    for (var c = 0, l = headerEls.length; c < l; c++) {
-        headers.push(new Header(headerEls[c]));
-    }
-    return headers;
+	if (!el) {
+		el = document.body;
+	} else if (!(el instanceof HTMLElement)) {
+		el = document.querySelector(el);
+	}
+	var headerEls = el.querySelectorAll('[data-o-component="o-ft-header"]:not([data-o-ft-header--js])');
+	var headers = [];
+	for (var c = 0, l = headerEls.length; c < l; c++) {
+		headers.push(new Header(headerEls[c]));
+	}
+	return headers;
 };
 
 module.exports = Header;
 
 },{"./../../../ftdomdelegate/lib/delegate.js":1,"./../../../o-hierarchical-nav/main.js":13}],13:[function(require,module,exports){
 /*global require,module*/
+'use strict';
 var oHierarchicalNav = require('./src/js/ResponsiveNav');
 var constructAll = function() {
-	'use strict';
 	oHierarchicalNav.init();
 	document.removeEventListener('o.DOMContentLoaded', constructAll);
-}
+};
 document.addEventListener('o.DOMContentLoaded', constructAll);
 
 module.exports = oHierarchicalNav;
 
 },{"./src/js/ResponsiveNav":15}],14:[function(require,module,exports){
 /*global require, module*/
+'use strict';
 
 var DomDelegate = require("./../../../ftdomdelegate/lib/delegate.js"),
-    oDom = require("./../../../o-dom/main.js"),
-    utils = require('./utils');
+	oDom = require("./../../../o-dom/main.js"),
+	utils = require('./utils');
 
 function Nav(rootEl) {
-    "use strict";
 
-    var bodyDelegate = new DomDelegate(document.body),
-        rootDelegate = new DomDelegate(rootEl);
+	var bodyDelegate = new DomDelegate(document.body),
+		rootDelegate = new DomDelegate(rootEl);
 
-    // Get sub-level element
-    function getChildListEl(el) {
-        return el.querySelector('ul');
-    }
+	// Get sub-level element
+	function getChildListEl(el) {
+		return el.querySelector('ul');
+	}
 
-    // Check if element has sub-level nav
-    function hasChildList(el) {
-        return !!getChildListEl(el);
-    }
+	// Check if element has sub-level nav
+	function hasChildList(el) {
+		return !!getChildListEl(el);
+	}
 
-    // Get controlled element
-    function getMegaDropdownEl(itemEl) {
-        if (itemEl.hasAttribute('aria-controls')) {
-            return document.getElementById(itemEl.getAttribute('aria-controls'));
-        }
-    }
+	// Get controlled element
+	function getMegaDropdownEl(itemEl) {
+		if (itemEl.hasAttribute('aria-controls')) {
+			return document.getElementById(itemEl.getAttribute('aria-controls'));
+		}
+	}
 
-    // Check if element is a controller of another DOM element
-    function isControlEl(el) {
-        return !!(getChildListEl(el) || getMegaDropdownEl(el));
-    }
+	// Check if element is a controller of another DOM element
+	function isControlEl(el) {
+		return !!(getChildListEl(el) || getMegaDropdownEl(el));
+	}
 
-    // Check if element has been expanded
-    function isExpanded(el) {
-        return el.getAttribute('aria-expanded') === 'true';
-    }
+	// Check if element has been expanded
+	function isExpanded(el) {
+		return el.getAttribute('aria-expanded') === 'true';
+	}
 
-    // Check if a certain element is inside the root nav
-    function isElementInsideNav(el) {
-        var expandedLevel1El = rootEl.querySelector('[data-o-hierarchical-nav-level="1"] > [aria-expanded="true"]'),
-            expandedMegaDropdownEl,
-            allLevel1Els;
-        if (expandedLevel1El) {
-            expandedMegaDropdownEl = getMegaDropdownEl(expandedLevel1El);
-            if (expandedMegaDropdownEl && expandedMegaDropdownEl.contains(el)) {
-                return true;
-            }
-        }
-        allLevel1Els = rootEl.querySelectorAll('[data-o-hierarchical-nav-level="1"] > li');
-        for (var c = 0, l = allLevel1Els.length; c < l; c++) {
-            if (allLevel1Els[c].contains(el)) {
-                return true;
-            }
-        }
-        return false;
-    }
+	// Check if a certain element is inside the root nav
+	function isElementInsideNav(el) {
+		var expandedLevel1El = rootEl.querySelector('[data-o-hierarchical-nav-level="1"] > [aria-expanded="true"]'),
+			expandedMegaDropdownEl,
+			allLevel1Els;
+		if (expandedLevel1El) {
+			expandedMegaDropdownEl = getMegaDropdownEl(expandedLevel1El);
+			if (expandedMegaDropdownEl && expandedMegaDropdownEl.contains(el)) {
+				return true;
+			}
+		}
+		allLevel1Els = rootEl.querySelectorAll('[data-o-hierarchical-nav-level="1"] > li');
+		for (var c = 0, l = allLevel1Els.length; c < l; c++) {
+			if (allLevel1Els[c].contains(el)) {
+				return true;
+			}
+		}
+		return false;
+	}
 
-    // Get the level a nav is in
-    function getLevel(el) {
-        return parseInt(el.parentNode.getAttribute('data-o-hierarchical-nav-level'), 10);
-    }
+	// Get the level a nav is in
+	function getLevel(el) {
+		return parseInt(el.parentNode.getAttribute('data-o-hierarchical-nav-level'), 10);
+	}
 
-    // Check if a level 2 nav will fit in the window
-    function level2ListFitsInWindow(l2El) {
-        return l2El.getBoundingClientRect().right < window.innerWidth;
-    }
+	// Check if a level 2 nav will fit in the window
+	function level2ListFitsInWindow(l2El) {
+		return l2El.getBoundingClientRect().right < window.innerWidth;
+	}
 
-    // Check if an element will have enough space to its right
-    function elementFitsToRight(el1, el2) {
-        return el1.getBoundingClientRect().right + el2.offsetWidth < window.innerWidth;
-    }
+	// Check if an element will have enough space to its right
+	function elementFitsToRight(el1, el2) {
+		return el1.getBoundingClientRect().right + el2.offsetWidth < window.innerWidth;
+	}
 
-    // Depending on if an element fits to its right or not, change its class to apply correct css
-    function positionChildListEl(parentEl, childEl) {
-        parentEl.classList.remove('o-hierarchical-nav--align-right');
-        parentEl.classList.remove('o-hierarchical-nav__outside-right');
-        parentEl.classList.remove('o-hierarchical-nav--left');
-        if (!childEl) {
-            return;
-        }
-        if (getLevel(parentEl) === 1) {
-            if (!level2ListFitsInWindow(childEl)) {
-                parentEl.classList.add('o-hierarchical-nav--align-right');
-            }
-        } else {
-            if (elementFitsToRight(parentEl, childEl)) {
-                parentEl.classList.add('o-hierarchical-nav__outside-right');
-            }
-        }
-    }
+	// Depending on if an element fits to its right or not, change its class to apply correct css
+	function positionChildListEl(parentEl, childEl) {
+		parentEl.classList.remove('o-hierarchical-nav--align-right');
+		parentEl.classList.remove('o-hierarchical-nav__outside-right');
+		parentEl.classList.remove('o-hierarchical-nav--left');
+		if (!childEl) {
+			return;
+		}
+		if (getLevel(parentEl) === 1) {
+			if (!level2ListFitsInWindow(childEl)) {
+				parentEl.classList.add('o-hierarchical-nav--align-right');
+			}
+		} else {
+			if (elementFitsToRight(parentEl, childEl)) {
+				parentEl.classList.add('o-hierarchical-nav__outside-right');
+			}
+		}
+	}
 
-    // Hide an element
-    function hideEl(el) {
-        if (el) {
-            el.setAttribute('aria-hidden', 'true');
-        }
-    }
+	// Hide an element
+	function hideEl(el) {
+		if (el) {
+			el.setAttribute('aria-hidden', 'true');
+		}
+	}
 
-    // Display an element
-    function showEl(el) {
-        if (el) {
-            el.removeAttribute('aria-hidden');
-        }
-    }
+	// Display an element
+	function showEl(el) {
+		if (el) {
+			el.removeAttribute('aria-hidden');
+		}
+	}
 
-    // Collapse all items from a certain node list
-    function collapseAll(nodeList) {
-        if (!nodeList) {
-            nodeList = rootEl.querySelectorAll('[data-o-hierarchical-nav-level="1"] > li[aria-expanded=true]');
-        }
+	// Collapse all items from a certain node list
+	function collapseAll(nodeList) {
+		if (!nodeList) {
+			nodeList = rootEl.querySelectorAll('[data-o-hierarchical-nav-level="1"] > li[aria-expanded=true]');
+		}
 
-        utils.nodeListToArray(nodeList).forEach(function(childListItemEl) {
-            if (isExpanded(childListItemEl)) {
-                collapseItem(childListItemEl);
-            }
-        });
-    }
+		utils.nodeListToArray(nodeList).forEach(function(childListItemEl) {
+			if (isExpanded(childListItemEl)) {
+				collapseItem(childListItemEl);
+			}
+		});
+	}
 
-    // Set an element as not expanded, and if it has children, do the same to them
-    function collapseItem(itemEl) {
-        itemEl.setAttribute('aria-expanded', 'false');
-        if (hasChildList(itemEl)) {
-            collapseAll(getChildListEl(itemEl).children);
-        }
-        hideEl(getMegaDropdownEl(itemEl));
-        dispatchCloseEvent(itemEl);
-    }
+	// Set an element as not expanded, and if it has children, do the same to them
+	function collapseItem(itemEl) {
+		itemEl.setAttribute('aria-expanded', 'false');
+		if (hasChildList(itemEl)) {
+			collapseAll(getChildListEl(itemEl).children);
+		}
+		hideEl(getMegaDropdownEl(itemEl));
+		dispatchCloseEvent(itemEl);
+	}
 
-    // Get same level items and collapse them
-    function collapseSiblingItems(itemEl) {
-        var listLevel = oDom.getClosestMatch(itemEl, 'ul').getAttribute('data-o-hierarchical-nav-level'),
-            listItemEls = rootEl.querySelectorAll('[data-o-hierarchical-nav-level="' + listLevel + '"] > li[aria-expanded="true"]');
-        for (var c = 0, l = listItemEls.length; c < l; c++) {
-            collapseItem(listItemEls[c]);
-        }
-    }
+	// Get same level items and collapse them
+	function collapseSiblingItems(itemEl) {
+		var listLevel = oDom.getClosestMatch(itemEl, 'ul').getAttribute('data-o-hierarchical-nav-level'),
+			listItemEls = rootEl.querySelectorAll('[data-o-hierarchical-nav-level="' + listLevel + '"] > li[aria-expanded="true"]');
+		for (var c = 0, l = listItemEls.length; c < l; c++) {
+			collapseItem(listItemEls[c]);
+		}
+	}
 
-    // Expand a nav item
-    function expandItem(itemEl) {
-        collapseSiblingItems(itemEl);
-        itemEl.setAttribute('aria-expanded', 'true');
-        positionChildListEl(itemEl, getChildListEl(itemEl));
-        showEl(getMegaDropdownEl(itemEl));
-        dispatchExpandEvent(itemEl);
-    }
+	// Expand a nav item
+	function expandItem(itemEl) {
+		collapseSiblingItems(itemEl);
+		itemEl.setAttribute('aria-expanded', 'true');
+		positionChildListEl(itemEl, getChildListEl(itemEl));
+		showEl(getMegaDropdownEl(itemEl));
+		dispatchExpandEvent(itemEl);
+	}
 
-    // Helper method to dispatch o-layers new event
-    function dispatchExpandEvent(itemEl) {
-        utils.dispatchCustomEvent(itemEl, 'oLayers.new', {'zIndex': 10, 'el': itemEl});
-    }
+	// Helper method to dispatch o-layers new event
+	function dispatchExpandEvent(itemEl) {
+		utils.dispatchCustomEvent(itemEl, 'oLayers.new', {'zIndex': 10, 'el': itemEl});
+	}
 
-    // Helper method to dispatch o-layers close event
-    function dispatchCloseEvent(itemEl) {
-        utils.dispatchCustomEvent(itemEl, 'oLayers.close', {'zIndex': 10, 'el': itemEl});
-    }
+	// Helper method to dispatch o-layers close event
+	function dispatchCloseEvent(itemEl) {
+		utils.dispatchCustomEvent(itemEl, 'oLayers.close', {'zIndex': 10, 'el': itemEl});
+	}
 
-    // Handle clicks ourselved by expanding or collapsing selected element
-    function handleClick(ev) {
-        var itemEl = oDom.getClosestMatch(ev.target, 'li');
-        if (itemEl && isControlEl(itemEl)) {
-            ev.preventDefault();
-            if (!isExpanded(itemEl)) {
-                expandItem(itemEl);
-            } else {
-                collapseItem(itemEl);            
-            }
-        }
-    }
+	// Handle clicks ourselved by expanding or collapsing selected element
+	function handleClick(ev) {
+		var itemEl = oDom.getClosestMatch(ev.target, 'li');
+		if (itemEl && isControlEl(itemEl)) {
+			ev.preventDefault();
+			if (!isExpanded(itemEl)) {
+				expandItem(itemEl);
+			} else {
+				collapseItem(itemEl);
+			}
+		}
+	}
 
-    // Position a level 3 nav
-    function positionLevel3s() {
-        var openLevel2El = rootEl.querySelector('[data-o-hierarchical-nav-level="2"] > [aria-expanded="true"]'),
-            openLevel3El = rootEl.querySelector('[data-o-hierarchical-nav-level="2"] > [aria-expanded="true"] > ul');
-        if (openLevel2El && openLevel3El) {
-            positionChildListEl(openLevel2El, openLevel3El);
-        }
-    }
+	// Position a level 3 nav
+	function positionLevel3s() {
+		var openLevel2El = rootEl.querySelector('[data-o-hierarchical-nav-level="2"] > [aria-expanded="true"]'),
+			openLevel3El = rootEl.querySelector('[data-o-hierarchical-nav-level="2"] > [aria-expanded="true"] > ul');
+		if (openLevel2El && openLevel3El) {
+			positionChildListEl(openLevel2El, openLevel3El);
+		}
+	}
 
-    // Position level 3s on resize
-    function resize() {
-        positionLevel3s();
-    }
+	// Position level 3s on resize
+	function resize() {
+		positionLevel3s();
+	}
 
-    // Set all tabIndexes of a tags to 0
-    function setTabIndexes() {
-        var aEls = rootEl.querySelectorAll('li > a:not([href])');
-        for (var c = 0, l = aEls.length; c < l; c++) {
-            if (aEls[c].tabIndex === 0) { // Don't override tabIndex if something else has set it, but otherwise set it to zero to make it focusable.
-                aEls[c].tabIndex = 0;
-            }
-        }
-    }
+	// Set all tabIndexes of a tags to 0
+	function setTabIndexes() {
+		var aEls = rootEl.querySelectorAll('li > a:not([href])');
+		for (var c = 0, l = aEls.length; c < l; c++) {
+			if (aEls[c].tabIndex === 0) { // Don't override tabIndex if something else has set it, but otherwise set it to zero to make it focusable.
+				aEls[c].tabIndex = 0;
+			}
+		}
+	}
 
-    function setLayersContext() {
-        // We'll use the body as the default context
-        bodyDelegate.on('oLayers.new', function(e) {
-            if (!isElementInsideNav(e.detail.el)) {
-                collapseAll();
-            }
-        });
-    }
+	function setLayersContext() {
+		// We'll use the body as the default context
+		bodyDelegate.on('oLayers.new', function(e) {
+			if (!isElementInsideNav(e.detail.el)) {
+				collapseAll();
+			}
+		});
+	}
 
-    function init() {
-        if (!rootEl) {
-            rootEl = document.body;
-        } else if (!(rootEl instanceof HTMLElement)) {
-            rootEl = document.querySelector(rootEl);
-        }
-        rootEl.setAttribute('data-o-hierarchical-nav--js', '');
-        setTabIndexes();
-        setLayersContext();
-        rootDelegate.on('click', handleClick);
-        rootDelegate.on('keyup', function(ev) { // Pressing enter key on anchors without @href won't trigger a click event
-            if (!ev.target.hasAttribute('href') && ev.keyCode === 13 && isElementInsideNav(ev.target)) {
-                handleClick(ev);
-            }
-        });
-        // Collapse all elements if the user clicks outside the nav
-        bodyDelegate.on('click', function(ev) {
-            if (!isElementInsideNav(ev.target)) {
-                collapseAll();
-            }
-        });
-    }
+	function init() {
+		if (!rootEl) {
+			rootEl = document.body;
+		} else if (!(rootEl instanceof HTMLElement)) {
+			rootEl = document.querySelector(rootEl);
+		}
+		rootEl.setAttribute('data-o-hierarchical-nav--js', '');
+		setTabIndexes();
+		setLayersContext();
+		rootDelegate.on('click', handleClick);
+		rootDelegate.on('keyup', function(ev) { // Pressing enter key on anchors without @href won't trigger a click event
+			if (!ev.target.hasAttribute('href') && ev.keyCode === 13 && isElementInsideNav(ev.target)) {
+				handleClick(ev);
+			}
+		});
+		// Collapse all elements if the user clicks outside the nav
+		bodyDelegate.on('click', function(ev) {
+			if (!isElementInsideNav(ev.target)) {
+				collapseAll();
+			}
+		});
+	}
 
-    function destroy() {
-        rootDelegate.destroy();
-        bodyDelegate.destroy();
-        rootEl.removeAttribute('data-o-hierarchical-nav--js');
-    }
+	function destroy() {
+		rootDelegate.destroy();
+		bodyDelegate.destroy();
+		rootEl.removeAttribute('data-o-hierarchical-nav--js');
+	}
 
-    init();
+	init();
 
-    this.resize = resize;
-    this.collapseAll = collapseAll;
-    this.destroy = destroy;
-
+	this.resize = resize;
+	this.collapseAll = collapseAll;
+	this.destroy = destroy;
 }
 
 module.exports = Nav;
+
 },{"./../../../ftdomdelegate/lib/delegate.js":1,"./../../../o-dom/main.js":10,"./utils":16}],15:[function(require,module,exports){
 /*global require,module*/
+'use strict';
 
 var SquishyList = require("./../../../o-squishy-list/main.js"),
-    DomDelegate = require("./../../../ftdomdelegate/lib/delegate.js"),
-    oViewport = require("./../../../o-viewport/main.js"),
-    Nav = require('./Nav');
+	DomDelegate = require("./../../../ftdomdelegate/lib/delegate.js"),
+	oViewport = require("./../../../o-viewport/main.js"),
+	Nav = require('./Nav');
 
 function ResponsiveNav(rootEl) {
-    "use strict";
 
-    var rootDelegate,
-        nav,
-        contentFilterEl,
-        contentFilter,
-        moreEl,
-        moreListEl;
+	var rootDelegate,
+		nav,
+		contentFilterEl,
+		contentFilter,
+		moreEl,
+		moreListEl;
 
-    // Check if element is a controller of another DOM element
-    function isMegaDropdownControl(el) {
-        return el.hasAttribute('aria-controls');
-    }
+	// Check if element is a controller of another DOM element
+	function isMegaDropdownControl(el) {
+		return el.hasAttribute('aria-controls');
+	}
 
-    // On resize, apply o-squishy-list, and, if it has a sub-level dom, populate more list
-    function resize() {
-        nav.resize();
-        if (contentFilter) {
-            contentFilter.squish();
-            if (!isMegaDropdownControl(moreEl)) {
-                populateMoreList(contentFilter.getHiddenItems());
-            }
-        }
-    }
+	// On resize, apply o-squishy-list, and, if it has a sub-level dom, populate more list
+	function resize() {
+		nav.resize();
+		if (contentFilter) {
+			contentFilter.squish();
+			if (!isMegaDropdownControl(moreEl)) {
+				populateMoreList(contentFilter.getHiddenItems());
+			}
+		}
+	}
 
-    // Empty the more list
-    function emptyMoreList() {
-        moreListEl.innerHTML = '';
-    }
+	// Empty the more list
+	function emptyMoreList() {
+		moreListEl.innerHTML = '';
+	}
 
-    // Get the information from the element and create a new li tag with the element's text to append more list
-    function addItemToMoreList(text, href) {
-        var itemEl = document.createElement('li'),
-            aEl = document.createElement('a');
+	// Get the information from the element and create a new li tag with the element's text to append more list
+	function addItemToMoreList(text, href) {
+		var itemEl = document.createElement('li'),
+			aEl = document.createElement('a');
 
-        if (typeof aEl.textContent !== 'undefined') {
-            aEl.textContent = text;
-        } else {
-            aEl.innerText = text;
-        }
-        aEl.href = href;
-        itemEl.appendChild(aEl);
-        moreListEl.appendChild(itemEl);
-    }
+		if (typeof aEl.textContent !== 'undefined') {
+			aEl.textContent = text;
+		} else {
+			aEl.innerText = text;
+		}
+		aEl.href = href;
+		itemEl.appendChild(aEl);
+		moreListEl.appendChild(itemEl);
+	}
 
-    // For every hidden item, add it to the more list
-    function populateMoreList(hiddenEls) {
-        emptyMoreList();
-        for (var c = 0, l = hiddenEls.length; c < l; c++) {
-            var aEl = hiddenEls[c].querySelector('a');
-            var ulEl = hiddenEls[c].querySelector('ul');
+	// For every hidden item, add it to the more list
+	function populateMoreList(hiddenEls) {
+		emptyMoreList();
+		for (var c = 0, l = hiddenEls.length; c < l; c++) {
+			var aEl = hiddenEls[c].querySelector('a');
+			var ulEl = hiddenEls[c].querySelector('ul');
 
-            var aText = (typeof aEl.textContent !== 'undefined') ? aEl.textContent : aEl.innerText;
-            addItemToMoreList(aText, aEl.href, ulEl);
-        }
-    }
+			var aText = (typeof aEl.textContent !== 'undefined') ? aEl.textContent : aEl.innerText;
+			addItemToMoreList(aText, aEl.href, ulEl);
+		}
+	}
 
-    // If all elements are hidden, add the all modifier, if not, the some modifier
-    function setMoreElClass(remainingItems) {
-        if (remainingItems === 0) {
-            moreEl.classList.add('o-hierarchical-nav__more--all');
-            moreEl.classList.remove('o-hierarchical-nav__more--some');
-        } else {
-            moreEl.classList.add('o-hierarchical-nav__more--some');
-            moreEl.classList.remove('o-hierarchical-nav__more--all');
-        }
-    }
+	// If all elements are hidden, add the all modifier, if not, the some modifier
+	function setMoreElClass(remainingItems) {
+		if (remainingItems === 0) {
+			moreEl.classList.add('o-hierarchical-nav__more--all');
+			moreEl.classList.remove('o-hierarchical-nav__more--some');
+		} else {
+			moreEl.classList.add('o-hierarchical-nav__more--some');
+			moreEl.classList.remove('o-hierarchical-nav__more--all');
+		}
+	}
 
-    // When there's an o-squishy-list change, collapse all elements and run the setMoreElClass method with number of non-hidden elements    
-    function contentFilterChangeHandler(ev) {
-        if (ev.target === contentFilterEl && ev.detail.hiddenItems.length > 0) {
-            nav.collapseAll();
-            setMoreElClass(ev.detail.remainingItems.length);
-        }
-    }
+	// When there's an o-squishy-list change, collapse all elements and run the setMoreElClass method with number of non-hidden elements
+	function contentFilterChangeHandler(ev) {
+		if (ev.target === contentFilterEl && ev.detail.hiddenItems.length > 0) {
+			nav.collapseAll();
+			setMoreElClass(ev.detail.remainingItems.length);
+		}
+	}
 
-    // If more button is clicked, populate it
-    function navExpandHandler(ev) {
-        if (ev.target === moreEl) {
-            populateMoreList(contentFilter.getHiddenItems());
-        }
-    }
+	// If more button is clicked, populate it
+	function navExpandHandler(ev) {
+		if (ev.target === moreEl) {
+			populateMoreList(contentFilter.getHiddenItems());
+		}
+	}
 
-    function init() {
-        if (!rootEl) {
-            rootEl = document.body;
-        } else if (!(rootEl instanceof HTMLElement)) {
-            rootEl = document.querySelector(rootEl);
-        }
-        nav = new Nav(rootEl);
-        rootDelegate = new DomDelegate(rootEl);
-        contentFilterEl = rootEl.querySelector('ul');
-        moreEl = rootEl.querySelector('[data-more]');
-        moreEl.setAttribute('aria-hidden', 'true');
-        if (contentFilterEl) {
-            contentFilter = new SquishyList(contentFilterEl, { filterOnResize: false });
-        }
-        // If there's a more element, add a ul tag where hidden elements will be appended
-        if (moreEl && !isMegaDropdownControl(moreEl)) {
-            moreListEl = document.createElement('ul');
-            moreListEl.setAttribute('data-o-hierarchical-nav-level', '2');
-            moreEl.appendChild(moreListEl);
-            rootDelegate.on('oLayers.new', navExpandHandler);
-        }
+	function init() {
+		if (!rootEl) {
+			rootEl = document.body;
+		} else if (!(rootEl instanceof HTMLElement)) {
+			rootEl = document.querySelector(rootEl);
+		}
+		nav = new Nav(rootEl);
+		rootDelegate = new DomDelegate(rootEl);
+		contentFilterEl = rootEl.querySelector('ul');
+		moreEl = rootEl.querySelector('[data-more]');
+		moreEl.setAttribute('aria-hidden', 'true');
+		if (contentFilterEl) {
+			contentFilter = new SquishyList(contentFilterEl, { filterOnResize: false });
+		}
+		// If there's a more element, add a ul tag where hidden elements will be appended
+		if (moreEl && !isMegaDropdownControl(moreEl)) {
+			moreListEl = document.createElement('ul');
+			moreListEl.setAttribute('data-o-hierarchical-nav-level', '2');
+			moreEl.appendChild(moreListEl);
+			rootDelegate.on('oLayers.new', navExpandHandler);
+		}
 
-        rootDelegate.on('oSquishyList.change', contentFilterChangeHandler);
+		rootDelegate.on('oSquishyList.change', contentFilterChangeHandler);
 
-        var bodyDelegate = new DomDelegate(document.body);
-        // Force a resize when it loads, in case it loads on a smaller screen
-        resize();
-        
-        oViewport.listenTo('resize');
-        bodyDelegate.on('oViewport.resize', resize);
-    }
+		var bodyDelegate = new DomDelegate(document.body);
+		// Force a resize when it loads, in case it loads on a smaller screen
+		resize();
 
-    function destroy() {
-        rootDelegate.destroy();
-    }
+		oViewport.listenTo('resize');
+		bodyDelegate.on('oViewport.resize', resize);
+	}
 
-    init();
+	function destroy() {
+		rootDelegate.destroy();
+	}
 
-    this.resize = resize;
-    this.destroy = destroy;
+	init();
+
+	this.resize = resize;
+	this.destroy = destroy;
 
 }
 
 // Initializes all nav elements in the page or whatever element is passed to it
 ResponsiveNav.init = function(el) {
-    'use strict';
-    if (!el) {
-        el = document.body;
-    } else if (!(el instanceof HTMLElement)) {
-        el = document.querySelector(el);
-    }
+	if (!el) {
+		el = document.body;
+	} else if (!(el instanceof HTMLElement)) {
+		el = document.querySelector(el);
+	}
 
-    var navEls = el.querySelectorAll('[data-o-component="o-hierarchical-nav"]:not([data-o-hierarchical-nav--js])'),
-        responsiveNavs = [];
-    for (var c = 0, l = navEls.length; c < l; c++) {
-        // If it's a vertical nav, we don't need all the responsive methods
-        if (navEls[c].getAttribute('data-o-hierarchical-nav-orientiation') === 'vertical') {
-            responsiveNavs.push(new Nav(navEls[c]));
-        } else {
-            responsiveNavs.push(new ResponsiveNav(navEls[c]));
-        }
-    }
-    return responsiveNavs;
-}
+	var navEls = el.querySelectorAll('[data-o-component="o-hierarchical-nav"]:not([data-o-hierarchical-nav--js])'),
+		responsiveNavs = [];
+	for (var c = 0, l = navEls.length; c < l; c++) {
+		// If it's a vertical nav, we don't need all the responsive methods
+		if (navEls[c].getAttribute('data-o-hierarchical-nav-orientiation') === 'vertical') {
+			responsiveNavs.push(new Nav(navEls[c]));
+		} else {
+			responsiveNavs.push(new ResponsiveNav(navEls[c]));
+		}
+	}
+	return responsiveNavs;
+};
 
 module.exports = ResponsiveNav;
+
 },{"./../../../ftdomdelegate/lib/delegate.js":1,"./../../../o-squishy-list/main.js":17,"./../../../o-viewport/main.js":26,"./Nav":14}],16:[function(require,module,exports){
 /*global exports*/
 
 // Helper function that converts a list of elements into an array
 function nodeListToArray(nl) {
-    'use strict';
-    return [].map.call(nl, function(element) {
-        return element;
-    });
+	'use strict';
+	return [].map.call(nl, function(element) {
+		return element;
+	});
 }
 
 // Helper function to dispatch events
 function dispatchCustomEvent(el, name, data) {
-    'use strict';
-    if (document.createEvent && el.dispatchEvent) {
-        var event = document.createEvent('Event');
-        event.initEvent(name, true, true);
-        if (data) {
-            event.detail = data;
-        }
-        el.dispatchEvent(event);
-    }
+	'use strict';
+	if (document.createEvent && el.dispatchEvent) {
+		var event = document.createEvent('Event');
+		event.initEvent(name, true, true);
+		if (data) {
+			event.detail = data;
+		}
+		el.dispatchEvent(event);
+	}
 }
 
 exports.nodeListToArray = nodeListToArray;
 exports.dispatchCustomEvent = dispatchCustomEvent;
+
 },{}],17:[function(require,module,exports){
 /*global module*/
 
@@ -10595,166 +10595,159 @@ $(function() {
 module.exports = {
 	prefixer: require('./src/js/prefixer')
 };
+
 },{"./src/js/prefixer":25}],25:[function(require,module,exports){
 'use strict';
 
 var el = document.createElement('o'),
-    style = el.style,
-    vendorPrefixes = 'Webkit Moz O ms',
-    stylePrefixes = vendorPrefixes.split(' '),
-    domPrefixes = vendorPrefixes.toLowerCase().split(' '),
+	style = el.style,
+	vendorPrefixes = 'Webkit Moz O ms',
+	stylePrefixes = vendorPrefixes.split(' '),
+	domPrefixes = vendorPrefixes.toLowerCase().split(' '),
 
-    /* 
-     * Simple object type checker
-     */
-    is = function( obj, type ) {
-        return typeof obj === type;
-    },
+	/*
+	 * Simple object type checker
+	 */
+	is = function( obj, type ) {
+		return typeof obj === type;
+	},
 
-    /*
-     * Checks if a string contains another string
-     */
-    contains = function( str, substr ) {
-        return ('' + str).indexOf(substr) + 1;
-    },
+	/*
+	 * Binding of a function to a given context
+	 */
+	bind = function (func, obj) {
+		if (Function.prototype.bind) {
+			return func.bind(obj);
+		} else {
+			return function () {
+				return func.apply(obj, arguments);
+			};
+		}
+	},
 
-    /*
-     * Binding of a function to a given context
-     */
-    bind = function (func, obj) {
-        if (Function.prototype.bind) {
-            return func.bind(obj);
-        } else {
-            return function () {
-                return func.apply(obj, arguments);
-            };
-        }
-    },
+	/*
+	 * Converts a hyphenated string to camel case
+	 */
+	camelify = function (str) {
+		return (str.indexOf('-') > -1) ? str.replace(/(?:\-)([a-z])/gi, function ($0, $1) {
+			return $1.toUpperCase();
+		}) : str;
+	},
 
-    /*
-     * Converts a hyphenated string to camel case
-     */
-    camelify = function (str) {
-        return (str.indexOf('-') > -1) ? str.replace(/(?:\-)([a-z])/gi, function ($0, $1) {
-            return $1.toUpperCase();
-        }) : str;
-    },
+	/*
+	 * Converts a camelcase property to its hyphenated equivalent
+	 */
+	hyphenateProp = function (prop) {
+		if (prop) {
+			return prop.replace(/([A-Z])/g, function ($0, $1) {
+				return '-' + $1.toLowerCase();
+			}).replace(/^ms-/,'-ms-');
+		} else {
+			return false;
+		}
+	},
 
-    /*
-     * Converts a camelcase property to its hyphenated equivalent
-     */
-    hyphenateProp = function (prop) {
-        if (prop) {
-            return prop.replace(/([A-Z])/g, function ($0, $1) {
-                return '-' + $1.toLowerCase();
-            }).replace(/^ms-/,'-ms-');
-        } else {
-            return false;
-        }
-    },
+	/*
+	 *  Gets a list of prefixed properties derived from a single w3c property name. It always has the unprefixed property as the first item in the list
+	 */
+	getPrefixedPropList = function (prop, prefixes) {
+		var capitalisedProp = prop.charAt(0).toUpperCase() + prop.slice(1);
 
-    /*
-     *  Gets a list of prefixed properties derived from a single w3c property name. It always has the unprefixed property as the first item in the list
-     */
-    getPrefixedPropList = function (prop, prefixes) {
-        var capitalisedProp = prop.charAt(0).toUpperCase() + prop.slice(1);
-            
-        return (prop + ' ' + prefixes.join(capitalisedProp + ' ') + capitalisedProp).split(' ');
-    },
+		return (prop + ' ' + prefixes.join(capitalisedProp + ' ') + capitalisedProp).split(' ');
+	},
 
-    /*
-     * Given a list of property names, returns the first name that is defined on an object. If none are defined returns false
-     */
-    getFirstDefinedProp = function (obj, propNameList) {
-        for (var i in propNameList) {
-            var prop = propNameList[i];
-            if (obj[prop] !== undefined) {
-                return prop;
-            }
-        }
-        return false;
-    },
+	/*
+	 * Given a list of property names, returns the first name that is defined on an object. If none are defined returns false
+	 */
+	getFirstDefinedProp = function (obj, propNameList) {
+		for (var i in propNameList) {
+			if (i) {
+				var prop = propNameList[i];
+				if (obj[prop] !== undefined) {
+					return prop;
+				}
+			}
+		}
+		return false;
+	},
 
-    /*
-     *  Returns the vendor prefixed version of a style property
-     */
-    stylePrefixer = function (stylePropName) {
-        return getFirstDefinedProp(style, getPrefixedPropList(camelify(stylePropName), stylePrefixes));
-    },
+	/*
+	 *  Returns the vendor prefixed version of a style property
+	 */
+	stylePrefixer = function (stylePropName) {
+		return getFirstDefinedProp(style, getPrefixedPropList(camelify(stylePropName), stylePrefixes));
+	},
 
-    /*
-     *  Returns the vendor prefixed version of a dom property
-     */
-    domPrefixer = function (obj, domPropName) {
-        return getFirstDefinedProp(obj, getPrefixedPropList(camelify(domPropName), domPrefixes));
-    },
+	/*
+	 *  Returns the vendor prefixed version of a dom property
+	 */
+	domPrefixer = function (obj, domPropName) {
+		return getFirstDefinedProp(obj, getPrefixedPropList(camelify(domPropName), domPrefixes));
+	},
 
-    /*
-     *  Returns the hyphenated vendor prefixed version of a css property
-     */
-    cssPrefixer = function (cssPropName) {
-       return hyphenateProp(stylePrefixer(cssPropName));
-    },
+	/*
+	 *  Returns the hyphenated vendor prefixed version of a css property
+	 */
+	cssPrefixer = function (cssPropName) {
+		return hyphenateProp(stylePrefixer(cssPropName));
+	},
 
-    /*
-     *  Returns the value of a vendor prefixed version of a dom property
-     */
-    getDomProperty = function (obj, domPropName) {
-        var prop = obj[domPrefixer(obj, domPropName)];
-        return is(prop, 'undefined') ? false : prop;
-    },
+	/*
+	 *  Returns the value of a vendor prefixed version of a dom property
+	 */
+	getDomProperty = function (obj, domPropName) {
+		var prop = obj[domPrefixer(obj, domPropName)];
+		return is(prop, 'undefined') ? false : prop;
+	},
 
-    /*
-     *  Returns a vendor prefixed DOM method bound to a given object
-     */
-    getDomMethod = function (obj, domPropName, bindTo) {
-        var prop = getDomProperty(obj, domPropName);
-        
-        return is(prop, 'function') ? bind(prop, obj || bindTo) : false;
-    },
+	/*
+	 *  Returns a vendor prefixed DOM method bound to a given object
+	 */
+	getDomMethod = function (obj, domPropName, bindTo) {
+		var prop = getDomProperty(obj, domPropName);
 
-    /*
-     *  Returns the value of a vendor prefixed version of a style property
-     *  If a list of properties is requested returns a hash table of the form { requestedPropertyName {prefixedName: 'webkitStyle', value: '10px'}} 
-     */
-    getStyleValue = function (element, stylePropNames) {
-        var computedStyle = getComputedStyle(element, null),
-            result = {},
-            styleEntry,
-            prefixedName;
-        if (stylePropNames.indexOf(' ') === -1) {
-            return computedStyle.getPropertyValue(cssPrefixer(stylePropNames));
-        }
-        
-        stylePropNames = stylePropNames.split(' ');
+		return is(prop, 'function') ? bind(prop, obj || bindTo) : false;
+	},
 
-        for (var i = stylePropNames.length - 1; i >= 0; i--) {
-            prefixedName = cssPrefixer(stylePropNames[i]);
+	/*
+	 *  Returns the value of a vendor prefixed version of a style property
+	 *  If a list of properties is requested returns a hash table of the form { requestedPropertyName {prefixedName: 'webkitStyle', value: '10px'}}
+	 */
+	getStyleValue = function (element, stylePropNames) {
+		var computedStyle = getComputedStyle(element, null),
+			result = {},
+			styleEntry,
+			prefixedName;
+		if (stylePropNames.indexOf(' ') === -1) {
+			return computedStyle.getPropertyValue(cssPrefixer(stylePropNames));
+		}
 
-            styleEntry = {
-                prefixedName: cssPrefixer(stylePropNames[i])
-            };
+		stylePropNames = stylePropNames.split(' ');
 
-            result[stylePropNames[i]] = {
-                prefixedName: prefixedName,
-                value: computedStyle.getPropertyValue(prefixedName)
-            };
-        }
+		for (var i = stylePropNames.length - 1; i >= 0; i--) {
+			prefixedName = cssPrefixer(stylePropNames[i]);
 
-        return result;
-    };
+			styleEntry = {
+				prefixedName: cssPrefixer(stylePropNames[i])
+			};
+
+			result[stylePropNames[i]] = {
+				prefixedName: prefixedName,
+				value: computedStyle.getPropertyValue(prefixedName)
+			};
+		}
+
+		return result;
+	};
 
 module.exports = {
-    css: cssPrefixer,
-    style: stylePrefixer,
-    dom: domPrefixer,
-    getStyleValue: getStyleValue,
-    getDomProperty: getDomProperty,
-    getDomMethod: getDomMethod
+	css: cssPrefixer,
+	style: stylePrefixer,
+	dom: domPrefixer,
+	getStyleValue: getStyleValue,
+	getDomProperty: getDomProperty,
+	getDomMethod: getDomMethod
 };
-
-
-
 
 },{}],26:[function(require,module,exports){
 'use strict';
