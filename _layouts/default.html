@@ -48,9 +48,11 @@
 				<li {% if page.title == 'Developer guide' %} aria-expanded="true" aria-selected="true"{% endif %}>
 					<a href="{{ site.baseurl }}/docs/developer-guide/">Developer guide</a>
 				{% if page.section == 'Developer guide' %}
+				<ul class="o-techdocs-nav o-techdocs-nav--sub">
 					<li{% if page.title == 'Browser support' %} aria-selected="true"{% endif %}>
 						<a href="{{ site.baseurl }}/docs/developer-guide/browser-support">Browser support</a>
 					</li>
+				</ul>
 				{% endif %}
 				</li>
 			</ul>
