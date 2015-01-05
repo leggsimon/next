@@ -24,4 +24,4 @@ Please note this document is still in draft - much of the text is placeholder.  
 
 ### I work for the FT or a Pearson company but don't have an FT.com account, is there a generic account I can use to login?
 
-We're trying to avoid usage of FT.com by generic accounts as much of Next's featureset relies on personalisation.  [FT.com Premium subscriptions can be requested by following the instructions on Neo](https://neo.pearson.com/community/enabling-functions/ges-human-resources/reward/my_benefits_uk/blog/2012/10/09/ftcom-subscriptions).
+We're trying to avoid usage of *Next* by generic accounts as much of Next's featureset relies on personalisation.  [FT.com Premium subscriptions can be requested by following the instructions on Neo](https://neo.pearson.com/community/enabling-functions/ges-human-resources/reward/my_benefits_uk/blog/2012/10/09/ftcom-subscriptions).
