@@ -33,6 +33,7 @@ All Next applications use `make` and all implement the following `make` commands
 - Use the [Service Registry](http://next-registry.ft.com/) by comparing the URL of the page that needs changing to the regular expression patterns in the second column.
 - `git clone` the repository corresponding to that application and `cd` into it.
 - Run `make install` to install the dependencies of that application.
+- Run `make build` to build the project files.
 - Ensure the application runs locally with `make run` and going to the URL of the page needing changes.  Note: normally, `make run` will run the whole site with *just the application you have checked out* running on your machine, proxying everything else to live.
 - Create a new branch and make the desire change.
 - Commit that change and create a pull request back to that application.
