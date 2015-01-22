@@ -46,7 +46,7 @@ All Next applications use `make` and all implement the following `make` commands
   -  `sudo chown $USER -R node_modules` (the folder where app/component specific node modules are installed)
   -  `sudo chown $USER -R ~/.npm` (the default location where npm puts cached versions of node modules)
 - Can't find `nodemon`, `mocha`, etc.  Your path might be missing `node_modules/.bin`.  Edit your `.bashrc` or `.bash_profile` file and ensure your path has the following paths added to it:-
-  - `export PATH="node_modules/.bin:/usr/local/bin:$PATH"
+  - `export PATH="node_modules/.bin:/usr/local/bin:$PATH"`
 - If a `make install` keeps leading to git connection errors, such as 
   - `github.com[0: 207.97.227.239]: errno=Connection timed out`
   - `fatal: unable to connect a socket (Connection timed out)` 
