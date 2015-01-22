@@ -38,3 +38,11 @@ All Next applications use `make` and all implement the following `make` commands
 - Create a new branch and make the desire change.
 - Commit that change and create a pull request back to that application.
 - Drop a note in the Next rooms on [Slack](https://financialtimes.slack.com/messages/ft-next/), HipChat or, if you have an @ft.com email address, next.team@ft.com.
+
+## Common errors
+
+- If npm install commands keep failing with permissions errors, read up at [Intro to NPM](http://howtonode.org/introduction-to-npm) on how to fix it.
+- If a `make install` keeps leading to git connection errors, such as 
+    `github.com[0: 207.97.227.239]: errno=Connection timed out`
+    `fatal: unable to connect a socket (Connection timed out)` 
+you'll want to [change your global git configuration](http://stackoverflow.com/questions/4891527/git-protocol-blocked-by-company-how-can-i-get-around-that/10729634#10729634).
