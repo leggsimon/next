@@ -1,5 +1,5 @@
 name: Next
-highlighter: true
+highlighter: pygments
 relative_permalinks: false
 baseurl: /next
 exclude: [bower_components, scss, node_modules, bower.json, Gruntfile.js, package.json, README.md]
