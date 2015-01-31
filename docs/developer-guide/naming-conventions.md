@@ -1,3 +1,10 @@
+---
+layout: default
+title: Naming conventions
+section: Developer guide
+permalink: /docs/developer-guide/naming-conventions/
+---
+
 # Standardised names for classes & data attributes
 
 Next websites use the following conventions for data-attributes and classes:
