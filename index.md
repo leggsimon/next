@@ -10,7 +10,7 @@ Please note this document is still in draft - much of the text is placeholder.  
 
 ## What is Next?
 
-- [a CDN](https://github.com/Financial-Times/next-fastly-deploy)
+- [a CDN](http://git.svc.ft.com:8080/projects/NEXT/repos/fastly-deploy/browse)
 - [a routing layer](http://git.svc.ft.com:8080/projects/NEXT/repos/router/browse)
 - [some applications](http://next-registry.ft.com)
 - an A/B testing framework
