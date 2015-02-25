@@ -16,7 +16,12 @@ Many applications also need a Content API key stored in a file in your home dire
 
 # CDN, Routing and the Registry
 
-// TODO: Explain and add architecture diagram
+<img src="{{ site.baseurl }}/img/architecture.svg" width="50%" />
+
+- The CDN ([Fastly](https://fastly.com)) provides cacheing and (emergency) fallback content if any of the underlying services fail.
+- [**next-registry**](http://next-registry.ft.com/) maps regular expressions that are used to match URL paths to applications (e.g. `^/$` maps to `next-engels`, the home page)
+- **next-router** is a simple http proxy (currently based on Node) that routes traffic to the correct application based on the data it downloads periodically from the registry.
+- The applications (e.g. next-engels, next-dobi, etc) serve the public facing pages of Next.
 
 # Make
 
