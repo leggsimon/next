@@ -19,5 +19,3 @@ Next websites use the following conventions for data-attributes and classes:
 * data-trackable  
     used by the tracking system to determine the dom path to the element being tracked  
     pipe-separated list of contextual information
-
-## Classes
