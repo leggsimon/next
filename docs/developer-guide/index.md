@@ -16,7 +16,7 @@ Many applications also need a Content API key stored in a file in your home dire
 
 # CDN, Routing and the Registry
 
-<img src="{{ site.baseurl }}/img/architecture.svg" width="50%" />
+<img src="{{ site.baseurl }}/img/architecture.svg" width="75%" />
 
 - The CDN ([Fastly](https://fastly.com)) provides cacheing and (emergency) fallback content if any of the underlying services fail.
 - [**next-registry**](http://next-registry.ft.com/) maps regular expressions that are used to match URL paths to applications (e.g. `^/$` maps to `next-engels`, the home page)
