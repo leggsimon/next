@@ -11,7 +11,7 @@ An elephant never forgets...
 
 ## Apps
 
-- Is you app monitored by _next-status_?
+- Is your app monitored by _next-status_?
 - Does your app have a friendly hostname?
 - Does your app have a Codeship or Jenkins job?
 - Is your app deployed by next-build-tools?
@@ -25,5 +25,5 @@ An elephant never forgets...
 - Is your new feature flagged?
 - Is there a good no-JavaScript core experience?
 - Is it tracked by next-beacon?
- - Is it tested on IE9+, Firefox, Safari, Chrome, iOS, Android?
+- Is it tested on IE9+, Firefox, Safari, Chrome, iOS, Android?
 
