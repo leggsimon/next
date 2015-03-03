@@ -10,7 +10,7 @@ permalink: /docs/developer-guide/
 Almost all Next applications rely on the following tools installed globally on development machines.  Please ensure both of these are successfully installed onto your development environment first:-
 
 - [Origami Build Tools](https://github.com/Financial-Times/origami-build-tools/)
-- [Next Router](http://git.svc.ft.com:8080/projects/NEXT/repos/router/browse)
+- [Next Router](http://git.svc.ft.com/projects/NEXT/repos/router/browse)
 
 Many applications also need a Content API key stored in a file in your home directory `~/.ftapi`.
 
@@ -20,7 +20,7 @@ Many applications also need a Content API key stored in a file in your home dire
 
 - The CDN ([Fastly](https://fastly.com)) provides cacheing and (emergency) fallback content if any of the underlying services fail.
 - [**next-registry**](http://next-registry.ft.com/) maps regular expressions that are used to match URL paths to applications (e.g. `^/$` maps to `next-engels`, the home page)
-- **next-router** is a simple http proxy (currently based on Node) that routes traffic to the correct application based on the data it downloads periodically from the registry.
+- [**next-router**](http://git.svc.ft.com/projects/NEXT/repos/router/browse) is a simple http proxy (currently based on Node) that routes traffic to the correct application based on the data it downloads periodically from the registry.
 - The applications (e.g. next-engels, next-dobi, etc) serve the public facing pages of Next.
 
 # Make
