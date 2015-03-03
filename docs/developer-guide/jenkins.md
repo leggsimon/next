@@ -25,6 +25,6 @@ when builds fail - helping prevent bad changes from being merged in.
 1. Go to your rpeository in Stash.  Click **Settings** then **Hooks** (under **Workflow**)
 2. Click the pencil icon next to **Stash Webhook to Jenkins**.
 3. Set the Jenkins URL to `http://ftjen06392-lvpr-uk-p.osb.ft.com:8181`
-4. Set the Repo Clone URL to `http://git.svc.ft.com:8080/scm/next/your-repository-name.git` (this must match **exactly** the repository URL set in your Jenkins config)
+4. Set the Repo Clone URL to `http://git.svc.ft.com/scm/next/your-repository-name.git` (this must match **exactly** the repository URL set in your Jenkins config)
 5. Click **Trigger Jenkins** to test the configuration, ensure it says **Success!**
 6. Click **Enable** or **Save**.
