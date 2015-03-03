@@ -16,3 +16,4 @@ permalink: /docs/developer-guide/new-starter/
 - Ask to be invited to the Next team on GitHub.
 - Ask to be invited to the Next team on Sentry.
 - Ask to be invited to the Financial Times on Heroku.
+- Ask to be invited to Fastly.com.
