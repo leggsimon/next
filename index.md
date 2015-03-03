@@ -11,7 +11,7 @@ Please note this document is still in draft - much of the text is placeholder.  
 ## What is Next?
 
 - [a CDN](http://git.svc.ft.com:8080/projects/NEXT/repos/fastly-deploy/browse)
-- [a routing layer](http://git.svc.ft.com:8080/projects/NEXT/repos/router/browse)
+- [a routing layer](http://git.svc.ft.com/projects/NEXT/repos/router/browse)
 - [some applications](http://next-registry.ft.com)
 - an A/B testing framework
 
