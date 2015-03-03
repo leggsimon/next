@@ -17,3 +17,4 @@ permalink: /docs/developer-guide/new-starter/
 - Ask to be invited to the Next team on Sentry.
 - Ask to be invited to the Financial Times on Heroku.
 - Ask to be invited to Fastly.com.
+- Be aware (but don't try to learn) [the Google Doc of FT-specific terms](https://docs.google.com/a/ft.com/spreadsheet/ccc?key=0AlHku4bDWky2dDZraDlKNzhOY1JDZzM5Mk5COGs5MFE#gid=0).
