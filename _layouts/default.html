@@ -49,6 +49,9 @@
 					<a href="{{ site.baseurl }}/docs/developer-guide/">Developer guide</a>
 				{% if page.section == 'Developer guide' %}
 				<ul class="o-techdocs-nav o-techdocs-nav--sub">
+					<li{% if page.title == 'New Starter' %} aria-selected="true"{% endif %}>
+						<a href="{{ site.baseurl }}/docs/developer-guide/new-starter/">New Starter</a>
+					</li>
 					<li{% if page.title == 'QA' %} aria-selected="true"{% endif %}>
 						<a href="{{ site.baseurl }}/docs/developer-guide/qa/">QA</a>
 					</li>
