@@ -4,7 +4,7 @@ title: Home
 section: Overview
 ---
 
-<p class="alert-big">Next is a new foundation for building digital applications at the FT.</p>
+<p class="alert-big">[Next](https://next.ft.com) is a new foundation for building digital applications at the FT.</p>
 
 Please note this document is still in draft - much of the text is placeholder.  If you spot any inaccuracies or omissions please raise an issue or email the Next team (instructions at the bottom of every page).
 
