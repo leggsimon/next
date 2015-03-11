@@ -4,16 +4,21 @@ title: Home
 section: Overview
 ---
 
-<p class="alert-big"><a href="https://next.ft.com">Next</a> is a new foundation for building digital applications at the FT.</p>
-
-Please note this document is still in draft - much of the text is placeholder.  If you spot any inaccuracies or omissions please raise an issue or email the Next team (instructions at the bottom of every page).
+<p class="alert-big"><a href="https://next.ft.com">Next</a> is a new foundation for building digital products at the FT.</p>
 
 ## What is Next?
 
-- [a CDN](http://git.svc.ft.com:8080/projects/NEXT/repos/fastly-deploy/browse)
-- [a routing layer](http://git.svc.ft.com/projects/NEXT/repos/router/browse)
-- [some applications](http://next-registry.ft.com)
-- an A/B testing framework
+Next is the future user-interface of ft.com.
+
+- [A content delivery
+  network](http://git.svc.ft.com:8080/projects/NEXT/repos/fastly-deploy/browse)
+  to ensure the site is served quickly to our audience around the world.
+- [A routing layer](http://git.svc.ft.com/projects/NEXT/repos/router/browse) to
+  make sure each request to the FT finds it's way to the correct content.
+- A collection of [applications](http://next-registry.ft.com), each one serving
+  a specific user need.
+- [An A/B testing framework](https://github.com/Financial-Times/next-ab) to
+  help build confidence that our features.
 
 ## Where to start
 

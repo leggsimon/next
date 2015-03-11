@@ -25,6 +25,9 @@ browsers.
 
 ## Process
 
+Next favours small groups of people
+[collaborating](http://www.agilemanifesto.org) to quickly get things done.
+
 Every change in Next is a pull request. Paying attention to these will help
 understand what’s going on in the project, or look at the whiteboards and talk
 to people.
@@ -38,56 +41,48 @@ Each component can be cloned from the repository and `make test` executed, or
 
 Typically a test will involve :-
 
-- Running `origami-build-tools verify` on the code - linting etc.  - Some unit
-tests.  - (Sometimes) an integration test over headless HTTP.
+- Running `origami-build-tools verify` on the code 
+- linting etc. 
+- Some unit tests.  
+- (Sometimes) an integration test over headless HTTP.
 
-External components (such as Origami, polyfill.io) implement their own tests
-(sometimes!).
+We dynamically provision an instance of the application for each pull request
+and smoke test in several browsers (via Sauce Labs).
 
-By the end of Q1 2015 we aim to dynamically provision an instance of the
-application for each pull request and smoke test in several browsers (via Sauce
-Labs).
+External components (such as Origami, polyfill.io) implement their own tests.
 
 Developers, designers, QA and product managers are charged with verifying the
-code they ship works in our supported browsers. This will come under closer
-scrutiny the more actual, real users we have.
+code they ship works in our supported browsers.
 
 ## Monitoring
 
 To catch live errors from the client and server we log exceptions to
-[Sentry](https://getsentry.com). Each day a developer is on bug duty and must
-monitor Sentry for problems.
+[Sentry](https://getsentry.com). Each day a developer is on [bug
+duty](/docs/developer-guide/bug-duty/) and will monitor Sentry for problems.
 
-Next code is heavily instrumented and metrics push to Graphite. In Q1 2015 we
-plan to set some simple alert thresholds using [Sensu](http://sensuapp.org) to
-show us when broken code has shipped.
+Next code is [heavily
+instrumented](https://github.com/Financial-Times/next-metrics) and metrics
+pushed to Graphite. We set simple alert thresholds
+using [Sensu](http://sensuapp.org) to show us when broken code has shipped.
 
-We also make use of real user monitoring, which will help us understand how the
+We also make use of real user monitoring, which helps understand how the
 live service is performing.
 
 Next uses Pingdom to monitor all services.
 
 ## Performance testing
 
-Measures
-
-For me, performance is mostly a user-facing metric, so ...
-
-We have 1 second threshold on 3G for domContentLoaded. We will measure this
+We have _1 second threshold on 3G for domContentLoaded_. We measure this
 with the internal WPT instance (triggered per build/release) and real
 user monitoring of the Navigation Timing API.
 
-Currently we have a 5 second threshold on internal request response times (goal
+Currently we have a _5 second threshold on internal request response times_ (goal
 is 2s). After this point the router will terminate the request and throw an
 error. The stale-if-error CDN will typically prevent this from being seen by
 users.
 
 Everything else can largely be solved fairly cheaply by a) more caching, b)
-more cpu/memory, c) less bad code ;)
-
-There’s some specific node.js things we want to watch our for, Eg. event loop
-time, and I might be interested in latency between bits of Heroku, FT platforms
-and other hosted services.
+more cpu/memory, c) less bad code.
 
 We’ve a simple siege benchmarking process that can be run on dev machines
 and/or Heroku against the production stack.
@@ -105,9 +100,6 @@ I expect full browser integration testing (Eg, Selenium) to be fairly light for
 a few months.
 
 We have no automated browser / css visual testing and won’t for Q1.
-
-There’s an outstanding conversation with the FT service desk about directing
-error/bugs at the next team.
 
 We will try maintain an uptime of around 99.5% (frontend stack) during Alpha.
 
