@@ -17,6 +17,7 @@ on the following sorts of problems prioritised in the following order.
 (non-serious issues should be filed in [JIRA](https://jira.ft.com/browse/NFT)).
 1. Live code errors that have been caught by
 [Sentry](https://app.getsentry.com/nextftcom/).
+1. More fine grained alerts appear in [Sensu](http://sensu.ft.com)
 1. Issues filed in [JIRA](https://jira.ft.com/browse/NFT).
 1. Maintaining the documentation.
 
