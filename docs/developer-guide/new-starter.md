@@ -19,3 +19,13 @@ permalink: /docs/developer-guide/new-starter/
 - Ask to be invited to the Financial Times on Heroku.
 - Ask to be invited to Fastly.com (optional).
 - Be aware of (but don't try to learn) [the Google Doc of FT-specific terms](https://docs.google.com/a/ft.com/spreadsheet/ccc?key=0AlHku4bDWky2dDZraDlKNzhOY1JDZzM5Mk5COGs5MFE#gid=0).
+
+# Development tools
+
+Almost all Next applications rely on the following tools installed globally on development machines.  Please ensure both of these are successfully installed onto your development environment first:-
+
+- [Origami Build Tools](https://github.com/Financial-Times/origami-build-tools/)
+- [Next Router](http://git.svc.ft.com/projects/NEXT/repos/router/browse)
+- [Nodemon](http://nodemon.io/)
+
+Many applications also need a Content API key stored in a file in your home directory `~/.ftapi`.
