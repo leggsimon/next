@@ -42,6 +42,9 @@ There's a couple of beacon clients to get started,
 
 Currently Next uses [Keen.io](http://keen.io) to store and analyse the events.
 
+As the plans around our future reporting systems become clear we may move our
+analysis in to RedShift and A.N.Other systems.
+
 ## Split testing
 
 Next has a homebrewed AB testing framework built in to it's core.
@@ -54,13 +57,19 @@ The aim is to provide a much richer means of modifying the state of the applicat
 
 To read more about this :-
 
-- [Segmentation](https://github.com/Financial-Times/next-ab).
-- [Features flags API](https://github.com/Financial-Times/next-feature-flags-api).
-- [Features flags client](https://github.com/Financial-Times/next-feature-flags-client) - _note the middleware_.
+- Segmentation of users in to test groups is done by [next-ab](https://github.com/Financial-Times/next-ab).
+- [Features flags API](https://github.com/Financial-Times/next-feature-flags-api) - allows people to wrap flags around features.
+- [Features flags client](https://github.com/Financial-Times/next-feature-flags-client) - exposes the flags to applications. Note the middleware, which maps the incoming _x-flags_ header to a feature flag.
 - [Data collection](https://github.com/Financial-Times/next-beacon) - _see above_.
 - [keen.io analysis APIs](https://keen.io/docs/data-analysis/).
 
 We keep a [discussion document of AB
 tests](https://docs.google.com/a/ft.com/document/d/1Cp-_Ho5OSRr_vztS_SwFDGkt-eVvbQviTMqAMG8XZV8)
 we want to run.
+
+## iJento
+
+Next maintains a [minimal implementation of iJento
+tracking](https://github.com/Financial-Times/next-ijento) to service business
+critical reporting.
 
