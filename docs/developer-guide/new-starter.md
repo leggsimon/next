@@ -26,6 +26,5 @@ Almost all Next applications rely on the following tools installed globally on d
 
 - [Origami Build Tools](https://github.com/Financial-Times/origami-build-tools/)
 - [Next Router](http://git.svc.ft.com/projects/NEXT/repos/router/browse)
-- [Nodemon](http://nodemon.io/)
 
 Many applications also need a Content API key stored in a file in your home directory `~/.ftapi`.
