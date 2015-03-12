@@ -5,15 +5,6 @@ section: Developer guide
 permalink: /docs/developer-guide/
 ---
 
-# Developer guide
-
-Almost all Next applications rely on the following tools installed globally on development machines.  Please ensure both of these are successfully installed onto your development environment first:-
-
-- [Origami Build Tools](https://github.com/Financial-Times/origami-build-tools/)
-- [Next Router](http://git.svc.ft.com/projects/NEXT/repos/router/browse)
-
-Many applications also need a Content API key stored in a file in your home directory `~/.ftapi`.
-
 # CDN, Routing and the Registry
 
 <img src="{{ site.baseurl }}/img/architecture.svg" width="75%" />
@@ -52,7 +43,7 @@ All Next applications use `make` and all implement the following `make` commands
   -  `sudo chown $USER -R ~/.npm` (the default location where npm puts cached versions of node modules)
 - Can't find `nodemon`, `mocha`, etc.  Your path might be missing `node_modules/.bin`.  Edit your `.bashrc` or `.bash_profile` file and ensure your path has the following paths added to it:-
   - `export PATH="node_modules/.bin:/usr/local/bin:$PATH"`
-- If a `make install` keeps leading to git connection errors, such as 
+- If a `make install` keeps leading to git connection errors, such as
   - `github.com[0: 207.97.227.239]: errno=Connection timed out`
-  - `fatal: unable to connect a socket (Connection timed out)` 
+  - `fatal: unable to connect a socket (Connection timed out)`
 you'll want to [change your global git configuration](http://stackoverflow.com/questions/4891527/git-protocol-blocked-by-company-how-can-i-get-around-that/10729634#10729634).
