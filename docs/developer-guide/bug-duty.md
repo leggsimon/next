@@ -20,4 +20,3 @@ on the following sorts of problems prioritised in the following order.
 1. More fine grained alerts appear in [Sensu](http://sensu.ft.com)
 1. Issues filed in [JIRA](https://jira.ft.com/browse/NFT).
 1. Maintaining the documentation.
-
