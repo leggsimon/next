@@ -23,6 +23,8 @@ staff) can switch these on to test features. Often, early versions of features
 are incomplete and/or experimental and don’t work across a full range of
 browsers.
 
+Flags automatically expire, so features automatically switch off.  A list of expired and soon-to-expire features is [available on our dashboard](http://ft-next-graphite-dashboard.herokuapp.com/radiator).
+
 ## Process
 
 Next favours small groups of people
