@@ -16,8 +16,8 @@ permalink: /docs/developer-guide/new-starter/
 - Ask to be invited to [the Next team on GitHub](https://github.com/orgs/Financial-Times/teams/next).
 - Ask to be invited to the Next team on Sentry.
 - Ask to be invited to the FT team on Pingdom (optional).
-- Ask to be invited to the Financial Times on Heroku.
-- Ask to be invited to Fastly.com (optional).
+- Ask to be invited to the Financial Times on Heroku. You'll need to setup a new Heroku account with your FT.com email (Please enable two factor authentication).
+- Ask to be invited to Fastly.com (optional) (Also enable two factor authentication).
 - Be aware of (but don't try to learn) [the Google Doc of FT-specific terms](https://docs.google.com/a/ft.com/spreadsheet/ccc?key=0AlHku4bDWky2dDZraDlKNzhOY1JDZzM5Mk5COGs5MFE#gid=0).
 
 # Development tools
@@ -27,4 +27,4 @@ Almost all Next applications rely on the following tools installed globally on d
 - [Origami Build Tools](https://github.com/Financial-Times/origami-build-tools/)
 - [Next Router](http://git.svc.ft.com/projects/NEXT/repos/router/browse)
 
-Many applications also need a Content API key stored in a file in your home directory `~/.ftapi`.
+Many applications also need a Content API key stored in a file in your home directory `~/.ftapi`.  You may also need to set an Elasticsearch url in a file in your home directory `~/.nextElasticSearchUrl`.  Please ask a member of the next team for an API key and the Elasticsearch url.
