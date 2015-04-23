@@ -17,6 +17,7 @@ permalink: /docs/developer-guide/new-starter/
 - Ask to be invited to the Next team on Sentry.
 - Ask to be invited to the FT team on Pingdom (optional).
 - Ask to be invited to the Financial Times on Heroku. You'll need to setup a new Heroku account with your FT.com email (Please enable two factor authentication).
+- Sign-up for an [account on ft.com](http://registration.ft.com/registration) then ask corporate.support@ft.com to upgrade it to a [free subscription](https://neo.pearson.com/community/enabling-functions/ges-human-resources/reward/my_benefits_uk/blog/2012/10/09/ftcom-subscriptions).
 - Ask to be invited to Fastly.com (optional) (Also enable two factor authentication).
 - Be aware of (but don't try to learn) [the Google Doc of FT-specific terms](https://docs.google.com/a/ft.com/spreadsheet/ccc?key=0AlHku4bDWky2dDZraDlKNzhOY1JDZzM5Mk5COGs5MFE#gid=0).
 
