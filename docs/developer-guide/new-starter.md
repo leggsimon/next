@@ -23,9 +23,26 @@ permalink: /docs/developer-guide/new-starter/
 
 # Development tools
 
+*To avoid permissions problems down the line it's worth running chown -R $USER /usr/local` to give npm permission to install globally before you do anything else*
+
 Almost all Next applications rely on the following tools installed globally on development machines.  Please ensure both of these are successfully installed onto your development environment first:-
 
 - [Origami Build Tools](https://github.com/Financial-Times/origami-build-tools/)
+- [Next Build Tools](https://github.com/Financial-Times/next-build-tools/)
 - [Next Router](http://git.svc.ft.com/projects/NEXT/repos/router/browse)
 
 Many applications also need a Content API key stored in a file in your home directory `~/.ftapi`.  You may also need to set an Elasticsearch url in a file in your home directory `~/.nextElasticSearchUrl`.  Please ask a member of the next team for an API key and the Elasticsearch url.
+
+In order to work with our ecosystem of components you will need to point bower at the origami regsitry. Running the following in terminal will do this for you. 
+
+```
+[ -e ~/.bowerrc ] || echo '{ "registry": { "search": [ "http://registry.origami.ft.com", "https://bower.herokuapp.com" ] } }' > ~/.bowerrc
+```
+
+## Setup troubleshooting
+
+- There's a good chance origami build toools will fail due to directory permissions while installing ruby gems. You will need to run `gem install sass -v 3.4.13`/`sudo gem install sass -v 3.4.13` and `gem install scss-lint -v 0.35.0`/`sudo gem install scss-lint -v 0.35.0`.
+- If you experience issues with node try `npm install -g npm` to upgrade npm
+- You will probably need to run `git config --global url."https://".insteadOf git://` in order to access git on some of our wifi networks
+- Make sure your ssh is set up correctly [https://help.github.com/articles/generating-ssh-keys/](https://help.github.com/articles/generating-ssh-keys/)
+- You should set up [two factor authentication](https://github.com/settings/security) This will mean when you first try to submit code to github your password won't be recognised and you'll need to use a [personal access token](https://github.com/settings/applications) instead of your password in the git cli
