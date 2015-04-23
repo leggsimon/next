@@ -23,9 +23,19 @@ permalink: /docs/developer-guide/new-starter/
 
 # Development tools
 
+*To avoid permissions problems down the line it's worth running chown -R $USER /usr/local` to give npm permission to install globally before you do anything else*
+
 Almost all Next applications rely on the following tools installed globally on development machines.  Please ensure both of these are successfully installed onto your development environment first:-
 
 - [Origami Build Tools](https://github.com/Financial-Times/origami-build-tools/)
 - [Next Router](http://git.svc.ft.com/projects/NEXT/repos/router/browse)
 
 Many applications also need a Content API key stored in a file in your home directory `~/.ftapi`.  You may also need to set an Elasticsearch url in a file in your home directory `~/.nextElasticSearchUrl`.  Please ask a member of the next team for an API key and the Elasticsearch url.
+
+In order to work with our ecosystem of components you will need to point bower at the origami registry. Running the following in terminal will do this for you.
+
+```
+[ -e ~/.bowerrc ] || echo '{ "registry": { "search": [ "http://registry.origami.ft.com", "https://bower.herokuapp.com" ] } }' > ~/.bowerrc
+```
+
+If you experience any problems take a look at our [troubleshooting gude](/docs/developer-guide/troubleshooting/). If your problem isn't listed there but you manage to solve it, please add the solution to the guide.
