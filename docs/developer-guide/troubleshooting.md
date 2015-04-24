@@ -19,4 +19,5 @@ permalink: /docs/developer-guide/troubleshooting/
 - Can't find `nodemon`, `mocha`, etc.  Your path might be missing `node_modules/.bin`.  Edit your `.bashrc` or `.bash_profile` file and ensure your path has the following paths added to it:-
   - `export PATH="node_modules/.bin:$PATH"`
   Then run `source ~/.bash_profile` to add it to your current terminal session
-
+- If bower complains of dependency resolution problems (or `make install` fails repeatedly at the bower step) run `rm -Rf bower_components` and try installing again. Avoid, if at all possible, manually resolving dependencies when bower gives you the option to.
+- If sass won't build (it may complain about too many open files) run `rm -Rf .sass-cache`
