@@ -21,6 +21,7 @@ permalink: /docs/developer-guide/new-starter/
 - Sign-up for an [account on ft.com](http://registration.ft.com/registration) then ask corporate.support@ft.com to upgrade it to a [free subscription](https://neo.pearson.com/community/enabling-functions/ges-human-resources/reward/my_benefits_uk/blog/2012/10/09/ftcom-subscriptions).
 - Ask to be invited to Fastly.com (optional) (Also enable two factor authentication).
 - Be aware of (but don't try to learn) [the Google Doc of FT-specific terms](https://docs.google.com/a/ft.com/spreadsheet/ccc?key=0AlHku4bDWky2dDZraDlKNzhOY1JDZzM5Mk5COGs5MFE#gid=0).
+- You may need to [request admin access to your FT laptop via Salesforce](https://financialtimes.my.salesforce.com/home/home.jsp).
 
 # Development tools
 
@@ -31,7 +32,7 @@ Almost all Next applications rely on the following tools installed globally on d
 - [Origami Build Tools](https://github.com/Financial-Times/origami-build-tools/)
 - [Next Router](http://git.svc.ft.com/projects/NEXT/repos/router/browse)
 
-Many applications also need a Content API key stored in a file in your home directory `~/.ftapi`.  You may also need to set an Elasticsearch url in a file in your home directory `~/.nextElasticSearchUrl`.  Please ask a member of the next team for an API key and the Elasticsearch url.
+Many applications also need a Content API key stored in a file in your home directory `~/.ftapi`.  You may also need to set an Elastic Search host in a file in your home directory `~/.elastic_search_host`.  Please ask a member of the next team for an API key and the Elastic Search host.
 
 In order to work with our ecosystem of components you will need to point bower at the origami registry. Running the following in terminal will do this for you.
 
