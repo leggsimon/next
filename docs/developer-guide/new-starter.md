@@ -27,8 +27,8 @@ permalink: /docs/developer-guide/new-starter/
 # Development tools
 
 ## Environment setup
-* To avoid permissions problems down the line it's worth running chown -R $USER /usr/local` to give npm permission to install globally before you do anything else
-* Prepending `node_modules/.bin` to your `$PATH` will mean you have to install fewer things globally and pick up lcal updates to modules that provide a cli
+* To avoid permissions problems down the line it's worth running `chown -R $USER /usr/local` to give npm permission to install globally before you do anything else
+* Prepending `node_modules/.bin` to your `$PATH` will mean you have to install fewer things globally and will pick up local updates to modules that provide a cli
 
 Almost all Next applications rely on the following tools installed globally on development machines.  Please ensure both of these are successfully installed onto your development environment first:-
 
