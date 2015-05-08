@@ -14,7 +14,7 @@ on the following sorts of problems prioritised in the following order.
 1. Responding to user feedback/bug reports sent to [next.feedback@ft.com](https://groups.google.com/a/ft.com/forum/#!forum/next.feedback).
 1. Serious issues reported via
 [Slack](https://financialtimes.slack.com/messages/ft-next/) or other channels
-(non-serious issues should be filed in [JIRA](https://jira.ft.com/browse/NFT)).
+(non-serious issues should be filed in [JIRA](https://jira.ft.com/browse/NFT) - when you login for the first time you must use your AD username and password, not Google login).
 1. Live code errors that have been caught by
 [Sentry](https://app.getsentry.com/nextftcom/).
 1. More fine grained alerts appear in [Sensu](http://sensu.ft.com)
