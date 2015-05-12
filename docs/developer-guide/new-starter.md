@@ -10,7 +10,7 @@ permalink: /docs/developer-guide/new-starter/
 - Welcome to Team Next!
 - [Join the team's Google Group](https://groups.google.com/a/ft.com/forum/#!forum/next.team) to get email updates.
 - Join our [general](https://financialtimes.slack.com/messages/ft-next/) and [dev](https://financialtimes.slack.com/messages/ft-next-dev/) Slack channel for team discussions (if you're not on Slack follow the instructions to create an account).
-- Add yourself to our [bug rota](https://github.com/Financial-Times/next-bug-rota/blob/master/app.js#L1)
+- Add yourself to our [bug rota](https://docs.google.com/spreadsheets/d/1mbJQYJOgXAH2KfgKUM1Vgxq8FUIrahumb39wzsgStu0/edit#gid=0)
 - [Join the feedback Google Group](https://groups.google.com/a/ft.com/forum/#!forum/next.feedback) to get user feedback emails. (Replying to queries is part of [bug duty](http://financial-times.github.io/next/docs/developer-guide/bug-duty/).)
 - Public repositories are on [GitHub](https://github.com/Financial-Times/), private on [Stash](http://git.svc.ft.com/projects/NEXT).  Repositories should be public if at all possible.  Do not create private repositories on GitHub.
 - Ask to be added as [an admin to the Next Stash repositories](http://git.svc.ft.com/plugins/servlet/projectpermissions/NEXT).
