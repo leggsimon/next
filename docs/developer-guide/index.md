@@ -23,6 +23,11 @@ All Next applications use `make` and all implement the following `make` commands
 - `make deploy` deploys the application (you may need to environment variables for this to run successfully)
 - `make run` runs the application locally (usually on port `localhost:5050`).
 
+## Conventions
+- We write code in U.S. English.  This is to avoid things like `color: $next-colour-blue;`.
+- We use tabs for indentation.
+- We take turns to bring biscuits into office.
+
 ## Typical develoment workflow
 
 - Identify something on https://next.ft.com that needs changing.
