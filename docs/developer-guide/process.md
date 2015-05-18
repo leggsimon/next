@@ -14,8 +14,8 @@ The emphasis is on small teams, self-organisation, incremental delivery, and [sh
 feedback
 loops](http://www.startuplessonslearned.com/2010/09/good-enough-never-is-or-is-it.html)
 
-We practice [http://en.wikipedia.org/wiki/Continuous_deployment](continuous
-deployment) to remove the risks around software delivery.
+We practice [continuous
+deployment](http://martinfowler.com/bliki/ContinuousDelivery.html) to remove the risks around software delivery.
 
 ## Quarterly
 
