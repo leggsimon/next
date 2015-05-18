@@ -14,13 +14,13 @@ The emphasis is on small teams, self-organisation, incremental delivery, and [sh
 feedback
 loops](http://www.startuplessonslearned.com/2010/09/good-enough-never-is-or-is-it.html)
 
-We pracitise [http://en.wikipedia.org/wiki/Continuous_delivery](continuous
-delivery) to remove the risks around software delivery.
+We practice [http://en.wikipedia.org/wiki/Continuous_deployment](continuous
+deployment) to remove the risks around software delivery.
 
 ## Quarterly
 
 At the outset of every quarter (i.e. 12 weeks) teams get together to discuss
-their objectives.
+their objectives after talking to various stakeholders around the business.
 
 Here are the current plans for Q2, May - July 2015 :-
 
@@ -35,15 +35,15 @@ Here's the [Q1 plan](http://matt.chadburn.co.uk/drop/q1.next.png).
 ## Weekly
 
 On **Monday** at 10am the whole team meets for an hour or so to discuss the week
-ahead and the week just gone. 
+ahead and the week just gone.
 
 Next values independent thought. Make sure you come to this meeting with a plan
-with what you want to achieve for the week. Ideally you'll be focussed on
-improving a specific metric or two. 
+with what you and your team want to achieve for the week. Ideally you'll be focussed
+on improving a specific metric or two. 
 
 Every **Thursday** a product manager will ask you to help compile a list of
 things your team have done this week. 'Done' typically means running in
-production. 
+production.
 
 Every **Friday** afternoon the project's stakeholders meet to discuss the
 week's actvities and have a chance to feedback before the following Monday.
@@ -58,4 +58,3 @@ showcase. This helps explain our progress to the wider team.
 
 Every two weeks, typically on **Thursdays**, there's a user testing session in
 the office. Speak to Jess if you want to get involved.
-
