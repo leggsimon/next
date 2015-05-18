@@ -38,6 +38,9 @@
 					<li{% if page.title == 'FAQ' %} aria-selected="true"{% endif %}>
 						<a href="{{ site.baseurl }}/docs/overview/faq">FAQ</a>
 					</li>
+					<li{% if page.title == 'QA' %} aria-selected="true"{% endif %}>
+						<a href="{{ site.baseurl }}/docs/overview/process/">Process</a>
+					</li>
 				</ul>
 				{% endif %}
 				</li>
@@ -70,9 +73,6 @@
 					</li>
 					<li{% if page.title == 'New Starter' %} aria-selected="true"{% endif %}>
 						<a href="{{ site.baseurl }}/docs/developer-guide/new-starter/">New Starter</a>
-					</li>
-					<li{% if page.title == 'QA' %} aria-selected="true"{% endif %}>
-						<a href="{{ site.baseurl }}/docs/developer-guide/process/">Process</a>
 					</li>
 					<li{% if page.title == 'QA' %} aria-selected="true"{% endif %}>
 						<a href="{{ site.baseurl }}/docs/developer-guide/qa/">QA</a>

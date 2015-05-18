@@ -2,7 +2,7 @@
 layout: default
 title: Process 
 section: Developer guide
-permalink: /docs/developer-guide/process/
+permalink: /docs/overview/process/
 ---
 
 # Process
