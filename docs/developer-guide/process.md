@@ -8,7 +8,8 @@ permalink: /docs/developer-guide/process/
 # Process
 
 Next uses a simple, [lightweight](http://www.agilemanifesto.org/) process to
-help communicate what everyone is working on.
+help communicate what everyone is working on and to help make sure the project
+is delivering value.
 
 The emphasis is on small teams, self-organisation, incremental delivery, and [short
 feedback
