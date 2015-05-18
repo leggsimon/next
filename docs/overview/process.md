@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Process 
-section: Developer guide
+section: Overview
 permalink: /docs/overview/process/
 ---
 
