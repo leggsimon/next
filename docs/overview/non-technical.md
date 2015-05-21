@@ -11,5 +11,5 @@ Next is new foundation for building products at the FT, and a replacement for ft
 
 The project started in October 2014.
 
-Read our [principals](/docs/overview/principles/) for more information.
+Read our [principals](/next/docs/overview/principles/) for more information.
 
