@@ -35,7 +35,7 @@ If you are **sure** you still need to create a new application within the stack,
  
 - Add a new property to the [config-vars](http://git.svc.ft.com/projects/NEXTPRIVATE/repos/config-vars/browse/models/production.json) data including the environment vars your application needs.
 	- *Note:* The Sentry ARN and URL must be unique. You can create a new app in Sentry [here](https://app.getsentry.com/nextftcom/) to obtain an ARN.
-	- *Note:* We prefer each application to have it's own unique API key. Get a new one from the list [here](https://docs.google.com/spreadsheets/d/1y8jZMQUjHh8jyyOXMIedEkw03IRoxUIGy88d58782WY)
+	- *Note:* We prefer each application to have its own unique API key. Get a new one from the list [here](https://docs.google.com/spreadsheets/d/1y8jZMQUjHh8jyyOXMIedEkw03IRoxUIGy88d58782WY)
 	- Verify your change has deployed before moving on: `curl -I https://ft-next-config-vars.herokuapp.com/app/YOUR_APP_NAME?apiKey=YOUR_API_KEY`
 	- Join the [ft-next-config-vars](https://dashboard.heroku.com/apps/ft-next-config-vars/resources) app in Heroku
 - Create a new application within Heroku corresponding to your app's name:
