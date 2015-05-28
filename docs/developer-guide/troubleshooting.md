@@ -21,3 +21,4 @@ permalink: /docs/developer-guide/troubleshooting/
   Then run `source ~/.bash_profile` to add it to your current terminal session
 - If bower complains of dependency resolution problems (or `make install` fails repeatedly at the bower step) run `rm -Rf bower_components` and try installing again. Avoid, if at all possible, manually resolving dependencies when bower gives you the option to.
 - If sass won't build (it may complain about too many open files) run `rm -Rf .sass-cache`
+- Are setting up a new app within Heroku or Travis? Read up more details on [creating new apps](/docs/developer-guide/creating-new-apps/) within the stack.
