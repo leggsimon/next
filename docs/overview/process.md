@@ -50,11 +50,11 @@ week's actvities and have a chance to feedback before the following Monday.
 
 ## Misc.
 
-Every other **Tuesday** we have a team retrospective. This gives everyone an
+Every other **Tuesday** we have a [team retrospective](https://docs.google.com/document/d/1Xk0EN824hOVTXXgbbPXoxJp3qGcnFHZ0k-DW0HZ62zk/edit). This gives everyone an
 opportunity to reflect on what improvements we need to make.
 
 Every other **Friday** you'll be asked to present your work at the department's
 showcase. This helps explain our progress to the wider team.
 
 Every two weeks, typically on **Thursdays**, there's a user testing session in
-the office. Speak to Jess if you want to get involved.
+the office. Speak to Jess or Victoria if you want to get involved.
