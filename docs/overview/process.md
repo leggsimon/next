@@ -36,6 +36,8 @@ A long term horizon view is available too :-
 
  - [2016](https://docs.google.com/presentation/d/14zs5GqI4oC5N84UqorTDoqTx1j66vh1FlLPJ5ehOHVY/edit#slide=id.p)
 
+The [May 2015 board update](https://docs.google.com/a/ft.com/file/d/0B0DDxFh3ZO93UjNWZ2s3anNBV00) board update contains the state of play and useful background information about the motivation behind the project.
+
 ## Weekly
 
 On **Monday** at 10am the whole team meets for an hour or so to discuss the week
