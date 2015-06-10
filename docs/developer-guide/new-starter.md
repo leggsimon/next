@@ -23,6 +23,7 @@ permalink: /docs/developer-guide/new-starter/
 - Ask to be invited to Fastly.com (optional) (Also enable two factor authentication).
 - Be aware of (but don't try to learn) [the Google Doc of FT-specific terms](https://docs.google.com/a/ft.com/spreadsheet/ccc?key=0AlHku4bDWky2dDZraDlKNzhOY1JDZzM5Mk5COGs5MFE#gid=0).
 - You may need to [request admin access to your FT laptop via Salesforce](https://financialtimes.my.salesforce.com/home/home.jsp).
+- Ask Matt C or Matt A for a quick run through of the architecture of Next (CDN, Content APIs, etc)
 
 # Development tools
 
