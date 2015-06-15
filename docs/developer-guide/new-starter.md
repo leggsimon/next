@@ -24,6 +24,7 @@ permalink: /docs/developer-guide/new-starter/
 - Be aware of (but don't try to learn) [the Google Doc of FT-specific terms](https://docs.google.com/a/ft.com/spreadsheet/ccc?key=0AlHku4bDWky2dDZraDlKNzhOY1JDZzM5Mk5COGs5MFE#gid=0).
 - You may need to [request admin access to your FT laptop via Salesforce](https://financialtimes.my.salesforce.com/home/home.jsp).
 - Ask Matt C or Matt A for a quick run through of the architecture of Next (CDN, Content APIs, etc)
+- [Sign up for LastPass](https://docs.google.com/document/d/11g8nghpv0aCnmh49FK8AK9wxUWC_Wj9swCAURKniJ4o/edit) and ask someone to be added to the Next team shared LastPass folder as an *administrator*.
 
 # Development tools
 
