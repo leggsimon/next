@@ -14,7 +14,7 @@ Next repositories use the following naming conventions
 Apps should be named with the following convention -
 
 <code>
-next-*
+next-*-page
 </code>
 
 A lot of the apps currently serving content are named after various fighter planes (engels, dobi, ilyushin). During the infancy of the next project, this was done as it wasn't always certain what a single app's responsibilities would be. As the project has progressed and become more stable it's now easier for us to name apps as per their purpose (next-article).
