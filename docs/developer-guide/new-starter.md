@@ -25,7 +25,7 @@ permalink: /docs/developer-guide/new-starter/
 - You may need to [request admin access to your FT laptop via Salesforce](https://financialtimes.my.salesforce.com/home/home.jsp).
 - Ask Matt C or Matt A for a quick run through of the architecture of Next (CDN, Content APIs, etc)
 - [Sign up for LastPass](https://docs.google.com/document/d/11g8nghpv0aCnmh49FK8AK9wxUWC_Wj9swCAURKniJ4o/edit) and ask someone to be added to the Next team shared LastPass folder as an *administrator*.
-- Ask `itservicedesk@ft.com` to be added to the "eng" and "logs" AD groups, and the unix group within each of those. This will get you access to [AWS](https://awslogin.internal.ft.com) and [Splunk](https://splunk.internal.ft.com).
+- Ask `itservicedesk@ft.com` to be added to the "eng" and "logs" Active Directory groups, and the unix group within each of those. This will get you access to [AWS](https://awslogin.internal.ft.com) and [Splunk](https://splunk.internal.ft.com).
 
 # Development tools
 
