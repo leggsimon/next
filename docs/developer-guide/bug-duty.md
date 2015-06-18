@@ -21,3 +21,4 @@ on the following sorts of problems prioritised in the following order.
 1. Issues filed in [JIRA](https://jira.ft.com/browse/NFT).
 1. Maintaining the documentation.
 1. Review [retrospective actions](https://docs.google.com/document/d/1Xk0EN824hOVTXXgbbPXoxJp3qGcnFHZ0k-DW0HZ62zk/edit) for ideas on problems that need solving.
+1. Review the [monthly developer meeting minutes](https://docs.google.com/document/d/1_5BVMINvi4JvET3Ue17EJdDihb5Q2UVlfKcDFlfLENY/edit) for a list of things that people want to get done.
