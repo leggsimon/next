@@ -8,7 +8,7 @@ permalink: /docs/developer-guide/new-starter/
 # New Starter Guide
 
 - Welcome to Team Next!
-- [Join the team's Google Group](https://groups.google.com/a/ft.com/forum/#!forum/next.team) to get email updates.
+- [Join the team's Google Group](https://groups.google.com/a/ft.com/forum/#!forum/next.team) to get email updates and access to the shared documents on Google Drive.
 - Join our [general](https://financialtimes.slack.com/messages/ft-next/) and [dev](https://financialtimes.slack.com/messages/ft-next-dev/) Slack channel for team discussions (if you're not on Slack follow the instructions to create an account).
 - Add yourself to our [bug rota](https://docs.google.com/spreadsheets/d/1mbJQYJOgXAH2KfgKUM1Vgxq8FUIrahumb39wzsgStu0/edit#gid=0)
 - [Join the feedback Google Group](https://groups.google.com/a/ft.com/forum/#!forum/next.feedback) to get user feedback emails. (Replying to queries is part of [bug duty](http://financial-times.github.io/next/docs/developer-guide/bug-duty/).)
