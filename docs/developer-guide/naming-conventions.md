@@ -35,6 +35,17 @@ Anything not covered by the above, e.g bower and npm components should be named 
 n-*
 </code>
 
+# Code comments
+
+We use the following comments to help communicate certain things about the code.
+
+- `TODO` - Something that you've not yet done, but probably intend to do.
+- `FIXME` - Something that is obviously broken, stupid, or dangerous that needs revisiting.
+- `HACK` _or_ `AG:HACK` - A hack you intend to remove in the future. You can initial the hack for extra guilt.
+
+We monitor these here:- http://next-radiator.ft.com/code/HACK 
+
+
 # Standardised names for classes & data attributes
 
 Next websites use the following conventions for data-attributes and classes:
@@ -49,3 +60,4 @@ Next websites use the following conventions for data-attributes and classes:
 * data-trackable  
     used by the tracking system to determine the dom path to the element being tracked  
     pipe-separated list of contextual information
+
