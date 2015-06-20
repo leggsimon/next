@@ -8,7 +8,7 @@ permalink: /docs/developer-guide/qa/
 ## Environments
 
 Next has no internal dev/test/stage/etc environments. You can provision and run
-ad-hoc applications on Heroku or FT Platform. You can run the whole stack on
+ad-hoc applications on Heroku. You can run the whole stack on
 your localhost. These are the environments where we conduct QA.
 
 Mostly, everyone connects to production APIs from every environment.
