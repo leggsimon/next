@@ -5,6 +5,8 @@ section: Developer guide
 permalink: /docs/developer-guide/qa/
 ---
 
+# QA
+
 ## Environments
 
 Next has no internal dev/test/stage/etc environments. You can provision and run
