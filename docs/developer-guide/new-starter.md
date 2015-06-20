@@ -38,8 +38,6 @@ Almost all Next applications rely on the following tools installed globally on d
 - [Origami Build Tools](https://github.com/Financial-Times/origami-build-tools/)
 - [Next Router](http://git.svc.ft.com/projects/NEXT/repos/router/browse)
 
-Many applications also need a Content API key stored in a file in your home directory `~/.ftapi`.  You may also need to set an Elastic Search host in a file in your home directory `~/.elastic_search_host`.  Please ask a member of the next team for an API key and the Elastic Search host.
-
 In order to work with our ecosystem of components you will need to point bower at the origami registry. Running the following in terminal will do this for you.
 
 ```
