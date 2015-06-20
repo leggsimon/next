@@ -26,21 +26,22 @@ When new pieces of features are ready they should start delivering business
 value immediately. We aim to minimise and eliminate barriers to creating and
 maintaining customer facing services.
 
+We use feature toggles so that we can ship code decouple feature releases from code releases.
+
 Changes to Next should be measured in seconds, not weeks.
 
-## 3. Easy to use
+## 3. Easy to extend
 
-Every layer of Next, from the CDN to the individual applications, should be
-simple and well documented enough to allow any developer at the FT to get up
+Every layer of Next, including the CDN, individual applications and front end components, should be simple and well documented enough to allow any developer at the FT to get up
 and running on any part of Next within a few minutes.
 
 APIs and automation.
 
 ## 4. A cohesive product
 
-Seemless - Connecting all parts of the FT seamlessly
+Seemless - Connecting all parts of the FT seamlessly.
 
-Interconnected - Links & metadata are as valuable as the content itself
+Interconnected - Links & metadata are as valuable as the content itself.
 
 Next should represent the most efficient way to deliver applications to the
 FT's customers.
