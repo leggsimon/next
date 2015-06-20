@@ -23,6 +23,15 @@ All Next applications use `make` and all implement the following `make` commands
 - `make deploy` deploys the application (you may need to environment variables for this to run successfully)
 - `make run` runs the application locally (usually on port `localhost:5050`).
 
+Many applications also implement some or all of:-
+- `make build` / `make build-production` runs build steps (e.g. compilation of JavaScript & Sass).
+- `make watch` same as `make build` but watches for changes and automatically rebuilds.
+- `make test` runs unit tests, linting and other tests (that don't require a dynamically provisioned VM).
+  - `make verify` runs linting
+  - `make unit-test` runs unit-tests (usually mocha)
+- `make provision` dynamically spins up a Heroku app, deploys the application to it, and checks that it has deployed successfully (its `GET /__gtg` endpoint returns `200 OK`).
+- `make tidy` destroyed the dynamically spun up Heroku app.
+
 ## Conventions
 - We write code in U.S. English.  This is to avoid things like `color: $next-colour-blue;`.
 - We use tabs for indentation.
