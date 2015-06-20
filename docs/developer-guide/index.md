@@ -38,4 +38,4 @@ All Next applications use `make` and all implement the following `make` commands
 - Ensure the application runs locally with `make run` and going to the URL of the page needing changes.  Note: normally, `make run` will run the whole site with *just the application you have checked out* running on your machine, proxying everything else to live.
 - Create a new branch and make the desire change.
 - Commit that change and create a pull request back to that application.
-- Drop a note in the Next rooms on [Slack](https://financialtimes.slack.com/messages/ft-next/), HipChat or, if you have an @ft.com email address, next.team@ft.com.
+- Drop a note in the Next rooms on [Slack](https://financialtimes.slack.com/messages/ft-next/), if you have an @ft.com email address, next.team@ft.com.
