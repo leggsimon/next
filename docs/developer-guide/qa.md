@@ -43,10 +43,10 @@ Each component can be cloned from the repository and `make test` executed, or
 
 Typically a test will involve :-
 
-- Running `origami-build-tools verify` on the code 
-- linting etc. 
+- Running `origami-build-tools verify` on the code (or `next-build-tools verify`, which uses Origami build tools internally), which provides linting.
 - Some unit tests.  
 - (Sometimes) an integration test over headless HTTP.
+- (Sometimes) screenshot diffing to detect visual changes (when things change a comment will be added to the pull request with links to the changes)
 
 We dynamically provision an instance of the application for each pull request
 and smoke test in several browsers (via Sauce Labs).
