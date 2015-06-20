@@ -38,5 +38,4 @@ provision servers and deploy code for their services within minutes.
 
 Previous attempts to integrate Next with FT Platform have demonstrated that it
 is not yet ready to be used in this way and so we have decided for now not to
-use FT Platform.  That said we are continuing to work with the FT Platform team
-to work towards this goal.
+use FT Platform.
