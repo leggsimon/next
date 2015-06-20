@@ -24,6 +24,7 @@ All Next applications use `make` and all implement the following `make` commands
 - `make run` runs the application locally (usually on port `localhost:5050`).
 
 Many applications also implement some or all of:-
+
 - `make build` / `make build-production` runs build steps (e.g. compilation of JavaScript & Sass).
 - `make watch` same as `make build` but watches for changes and automatically rebuilds.
 - `make test` runs unit tests, linting and other tests (that don't require a dynamically provisioned VM).
