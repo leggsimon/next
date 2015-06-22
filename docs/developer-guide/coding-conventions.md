@@ -12,7 +12,7 @@ See also [naming conventions](/docs/developer-guide/coding-conventions/)
 ## Code style and linting
 We cut the mustard, use the [polyfill service](https://cdn.polyfill.io/v1/docs/) to polyfill missing browser features and `origami build tools build` uses babel, so on the client side you can go crazy with ES5/6 features and modern APIs.
 
-We aim to use the BEM convention in our styles, but aren't adverse to more creative use of CSS where you feel it's needed.
+We aim to use the BEM convention in our styles, but aren't averse to more creative use of CSS where you feel it's needed.
 
 Code style is enforced using `next-build-tools verify` for applications and server side modules, and `origami-build-tools verify` for client side components. To find out more write some code and see what these tasks complain about :).
 
@@ -68,7 +68,7 @@ root
 Use common sense, but stick to as much of the structure above as possible, particularly with regard to the config files in the directory root.
 
 ### Client side components (bower)
-Aspire to follow the [origami standard](http://origami.ft.com/), with the exception of templates, which should reside in a `templates` directory and be written using [handlebarsjs](http://handlebarsjs.com). Don't add a version number to the `bower.json` file - rely on git tags for releases. All tags should be semvers begning with 'v', e.g. `v2.3.4`.
+Aspire to follow the [origami standard](http://origami.ft.com/), with the exception of templates, which should reside in a `templates` directory and be written using [handlebarsjs](http://handlebarsjs.com). Don't add a version number to the `bower.json` file - rely on git tags for releases. All tags should be semvers beginning with 'v', e.g. `v2.3.4`.
 
 ### Server side modules (npm)
-No convention on structure. Use the version number `0.0.0` in the `package.json` file and rely on git tags + [npm-prepublish](https://www.npmjs.com/package/npm-prepublish) for releases. All tags should be semvers begning with 'v', e.g. `v2.3.4`.
+No convention on structure. Use the version number `0.0.0` in the `package.json` file and rely on git tags + [npm-prepublish](https://www.npmjs.com/package/npm-prepublish) for releases. All tags should be semvers beginning with 'v', e.g. `v2.3.4`.
