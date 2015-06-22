@@ -14,7 +14,7 @@ We cut the mustard, use the [polyfill service](https://cdn.polyfill.io/v1/docs/)
 
 We aim to use the BEM convention in our styles, but aren't averse to more creative use of CSS where you feel it's needed.
 
-Code style is enforced using `next-build-tools verify` for applications and server side modules, and `origami-build-tools verify` for client side components. To find out more write some code and see what these tasks complain about :).
+Code style is enforced using `next-build-tools verify` for applications and server side modules, and `origami-build-tools verify` for client side components. To find out more write some code and see what they complain about :)
 
 A few looser patterns that have emerged, but aren't enforced, are:
 
@@ -27,7 +27,7 @@ A few looser patterns that have emerged, but aren't enforced, are:
 
       });
   ```
-* Try to avoid client side templating as much as possible. Even for lazily loaded widgets favour server side rendering
+* Try to avoid client side templating as much as possible. Even for lazily loaded widgets favour server side rendering. Some apps use es6 template strings to render simple chunks of HTML.
 
 ## Application and module structure
 
@@ -50,7 +50,9 @@ root
   \_ public // built client side files (not to be committed)
             // all static assets should go in
             // https://github.com/Financial-Times/next-assets
-  \_ tests
+  \_ bower_components // not to be committed
+  \_ node_modules     // not to be committed
+  \_ test
     \_ client // specs and config for nightwatch/karma
     \_ server // specs go in here (mocha config in Makefile)
     \_ fixtures
@@ -60,7 +62,7 @@ root
   Makefile
   Procfile
   .travis.yml
-  .gitignore // must ignore `public`
+  .gitignore // must ignore /public/, /bower_components/ and /node_modules/
   // other config/deployment files are ok in the root too
 ```
 
