@@ -19,7 +19,8 @@ Code style is enforced using `next-build-tools verify` for applications and serv
 A few looser patterns that have emerged, but aren't enforced, are:
 
 * Declare each variable on a separate line using the `var` keyword
-* Chain promises by indenting by a single tab e.g.
+* Use Promises for asynchronous flow control and `fetch` (which we polyfill globally on client and server side) for any http requests.
+* Chain Promises by indenting by a single tab e.g.
 
 
 		fetch(url)
@@ -27,7 +28,7 @@ A few looser patterns that have emerged, but aren't enforced, are:
 		  .then(function (data) {
 
 		  });
-
+		  
 * Try to avoid client side templating as much as possible. Even for lazily loaded widgets favour server side rendering. Some apps use es6 template strings to render simple chunks of HTML.
 
 ## Application and module structure
