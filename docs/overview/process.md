@@ -64,3 +64,5 @@ showcase. This helps explain our progress to the wider team.
 
 Every two weeks, typically on **Thursdays**, there's a user testing session in
 the office. Speak to Jess or Victoria if you want to get involved.
+
+We also have [development meetups](https://docs.google.com/document/d/1_5BVMINvi4JvET3Ue17EJdDihb5Q2UVlfKcDFlfLENY/edit#), as required.
