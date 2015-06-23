@@ -44,4 +44,4 @@ In order to work with our ecosystem of components you will need to point bower a
 [ -e ~/.bowerrc ] || echo '{ "registry": { "search": [ "http://registry.origami.ft.com", "https://bower.herokuapp.com" ] } }' > ~/.bowerrc
 ```
 
-If you experience any problems take a look at our [troubleshooting gude](/docs/developer-guide/troubleshooting/). If your problem isn't listed there but you manage to solve it, please add the solution to the guide.
+If you experience any problems take a look at our [troubleshooting guide](/next/docs/developer-guide/troubleshooting/). If your problem isn't listed there but you manage to solve it, please add the solution to the guide.
