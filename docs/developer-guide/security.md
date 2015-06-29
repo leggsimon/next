@@ -8,7 +8,7 @@ permalink: /docs/developer-guide/security/
 # Security
 
 - *Do not commit API keys or passwords to repositories*, with the following exceptions:-
-	- Except in the [`next-config-vars`](http://git.svc.ft.com/projects/NEXTPRIVATE/) repositority, which is specifically designed for the storage of access keys / passwords.
+	- Except in the [`next-config-vars`](http://git.svc.ft.com/projects/NEXTPRIVATE/) repositority, which is specifically designed for the storage of API keys.
 	- Except in `.travis.yml` files (e.g. for npm or Slack integration) and those *must* be [encrypted](http://docs.travis-ci.com/user/encryption-keys/).
 - *Avoid creating shared accounts*, where possible create accounts against individual users (shared accounts may be created for the purposes of automation in some cases).
 - *Do not store passwords for shared accounts anywhere except for LastPass*
