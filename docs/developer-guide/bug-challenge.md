@@ -9,7 +9,7 @@ permalink: /docs/developer-guide/bug-challenge/
 
 **I'm on the bug challenge. What's that?**
 
-If you're on the bug challenge, it's for the whole week and with another developer. In other words: Every week, two developers are assigned to the bug challenge. It's works the same as other weekly challenges. Put all your time into it; you aren't meant to work in your usual team.
+If you're on the bug challenge, it's for the whole week and with another developer. It works the same as other weekly challenges. Put all your time into it; you aren't meant to work in your usual team.
 
 **What do I do?**
 
