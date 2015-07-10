@@ -11,7 +11,7 @@ permalink: /docs/developer-guide/new-starter/
 - Google stuff
   * Make sure you have access to [the Next Google Drive](https://drive.google.com/open?id=0B0DDxFh3ZO93T3VYbkZVZnNEQk0&authuser=1).
   * [Join the team's Google Group](https://groups.google.com/a/ft.com/forum/#!forum/next.team) to get email updates and access to the shared documents on Google Drive.
-  * [Join the feedback Google Group](https://groups.google.com/a/ft.com/forum/#!forum/next.feedback) to get user feedback emails. (Replying to queries is part of [bug duty](http://financial-times.github.io/next/docs/developer-guide/bug-duty/).)
+  * [Join the feedback Google Group](https://groups.google.com/a/ft.com/forum/#!forum/next.feedback) to get user feedback emails. (Replying to queries is part of [bug challenge](http://financial-times.github.io/next/docs/developer-guide/bug-challenge/).)
   * Be aware of (but don't try to learn) [the Google Doc of FT-specific terms](https://docs.google.com/a/ft.com/spreadsheet/ccc?key=0AlHku4bDWky2dDZraDlKNzhOY1JDZzM5Mk5COGs5MFE#gid=0).
 - Slack
   * Join our [general](https://financialtimes.slack.com/messages/ft-next/) and [dev](https://financialtimes.slack.com/messages/ft-next-dev/) Slack channel for team discussions (if you're not on Slack follow the instructions to create an account).

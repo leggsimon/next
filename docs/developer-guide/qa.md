@@ -63,7 +63,7 @@ code they ship works in our supported browsers.
 
 To catch live errors from the client and server we log exceptions to
 [Sentry](https://getsentry.com). Each day a developer is on [bug
-duty](/docs/developer-guide/bug-duty/) and will monitor Sentry for problems.
+challenge](/docs/developer-guide/bug-challenge/) and will monitor Sentry for problems.
 
 Next code is [heavily
 instrumented](https://github.com/Financial-Times/next-metrics) and metrics
