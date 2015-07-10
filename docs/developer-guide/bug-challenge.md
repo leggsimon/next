@@ -19,7 +19,6 @@ Find things that are broken and fix them. There are many things that can break, 
 
 Yes. Use this as an opportunity to understand more about the whole Next FT stack, including (e.g.) 
 
- - List item
  - memory leaks in the platform 
  - protocol issues (e.g. tcp/http/https)
  - platforming, CDNs, proxies (e.g. heroku, fastly)
