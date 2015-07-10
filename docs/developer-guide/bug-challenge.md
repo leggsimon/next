@@ -83,7 +83,7 @@ Sentry
 Sensu
 
  - In slack, sensu alerts look like this:
-  ![In slack, sensu alerts look like this](http://next-geebee.ft.com/assets/bug-challenge/sensu-slack.png)
+ - ![In slack, sensu alerts look like this](http://next-geebee.ft.com/assets/bug-challenge/sensu-slack.png)
  - Click "Docs" for information on sensu. 
  - "Dashboard" links to http://sensu.ft.com/. 
 
