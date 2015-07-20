@@ -39,3 +39,11 @@ provision servers and deploy code for their services within minutes.
 Previous attempts to integrate Next with FT Platform have demonstrated that it
 is not yet ready to be used in this way and so we have decided for now not to
 use FT Platform.
+
+## What is the support agreement of Next?
+
+Next is a [Bronze-level product](https://docs.google.com/spreadsheets/d/1R2cm_MkcLKe6ceoIiFYfnkbE-gXjNMs9JTbvUXbSrs0). This means it's not classed as business-critical and support out-of-hours is 'best efforts' with longer allowance for recovery times. The level of support is agreed with the product management team.
+
+As we invite more traffic on to Next the need to provide greater support will grow.
+
+We are currently working on the monitoring and alerting systems that will allow us to increase our opt-in/out system to platinum service tier.
