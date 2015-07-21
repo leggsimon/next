@@ -14,7 +14,7 @@ Next repositories use the following naming conventions
 Apps should be named with the following convention -
 
 Repository name: `next-*-page`
-Heroku app name: `ft-next*-page`
+Heroku app name: `ft-next-*-page`
 
 - In the future the dev tools will add `-eu` or `-us` suffixes _automatically_; please do not add this manually.
 - *Do not use* version suffixes, eg. `-v001`;
@@ -25,7 +25,7 @@ Heroku app name: `ft-next*-page`
 APIs should be named with the following convention -
 
 Repository name: `next-*-api`
-Heroku app name: `ft-next*-api`
+Heroku app name: `ft-next-*-api`
 
 - In the future the dev tools will add `-eu` or `-us` suffixes _automatically_; please do not add this manually.
 - *Do not use* version suffixes, eg. `-v001`;
