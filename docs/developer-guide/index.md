@@ -12,7 +12,7 @@ permalink: /docs/developer-guide/
 - The CDN ([Fastly](https://fastly.com)) provides cacheing and (emergency) fallback content if any of the underlying services fail.
 - [**next-registry**](http://next-registry.ft.com/) maps regular expressions that are used to match URL paths to applications (e.g. `^/$` maps to `next-engels`, the home page)
 - [**next-router**](http://git.svc.ft.com/projects/NEXT/repos/router/browse) is a simple http proxy (currently based on Node) that routes traffic to the correct application based on the data it downloads periodically from the registry.
-- The applications (e.g. next-engels, next-dobi, etc) serve the public facing pages of Next.
+- The applications (e.g. next-front-page, next-stream-page, etc) serve the public facing pages of Next.
 
 # Make
 
