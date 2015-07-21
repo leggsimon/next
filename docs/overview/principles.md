@@ -26,7 +26,7 @@ When new pieces of features are ready they should start delivering business
 value immediately. We aim to minimise and eliminate barriers to creating and
 maintaining customer facing services.
 
-We use feature toggles so that we can ship code decouple feature releases from code releases.
+We use feature toggles so that we can ship code decoupled feature releases from code releases.
 
 Changes to Next should be measured in seconds, not weeks.
 
