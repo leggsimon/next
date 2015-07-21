@@ -13,19 +13,22 @@ Next repositories use the following naming conventions
 
 Apps should be named with the following convention -
 
-<code>
-next-*-page
-</code>
+Repository name: `next-*-page`
+Heroku app name: `ft-next*-page`
 
-A lot of the apps currently serving content are named after various fighter planes (engels, dobi, ilyushin). During the infancy of the next project, this was done as it wasn't always certain what a single app's responsibilities would be. As the project has progressed and become more stable it's now easier for us to name apps as per their purpose (next-article).
+- In the future the dev tools will add `-eu` or `-us` suffixes _automatically_; please do not add this manually.
+- *Do not use* version suffixes, eg. `-v001`;
+- A lot of the apps currently serving content are named after various fighter planes (engels, dobi, ilyushin). During the infancy of the next project, this was done as it wasn't always certain what a single app's responsibilities would be. As the project has progressed and become more stable it's now easier for us to name apps as per their purpose (next-stream-page, next-front-page).
 
 ##APIs
 
 APIs should be named with the following convention -
 
-<code>
-n-*-api
-</code>
+Repository name: `next-*-api`
+Heroku app name: `ft-next*-api`
+
+- In the future the dev tools will add `-eu` or `-us` suffixes _automatically_; please do not add this manually.
+- *Do not use* version suffixes, eg. `-v001`;
 
 ##Bower and npm modules
 
