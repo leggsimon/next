@@ -19,16 +19,14 @@ Create a pull request to the [config-vars repository](http://git.svc.ft.com:8080
 
 Add the following `circle.yml` file to the root of your application's repository:-
 
-```
-machine:
-  services:
-    - docker
-  node:
-    version: 0.12.2
+	machine:
+	  services:
+	    - docker
+	  node:
+	    version: 0.12.2
 
-deployment:
-  production:
-    branch: master
-    commands:
-      - make deploy
-```
+	deployment:
+	  production:
+	    branch: master
+	    commands:
+	      - make deploy
