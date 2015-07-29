@@ -11,7 +11,7 @@ We are currently migrating to Circle CI for applications.  (Components should co
 
 ## Brief Architecture
 
-We try to store as much CI configuration centrally in the [config-vars repository](http://git.svc.ft.com:8080/projects/NEXTPRIVATE/repos/config-vars/browse) and then **push** that configuration on every build through their APIs.  Not everything about Circle CI can be configured this way so unfortunately we also have to commit a lightweight `circle.yml` file into each repository as well.
+We try to store as much CI configuration centrally in the [config-vars repository](http://git.svc.ft.com:8080/projects/NEXTPRIVATE/repos/config-vars/browse) and then **push** that configuration on every build through Circle CI's APIs.  Not everything about Circle CI can be configured this way so unfortunately we also have to commit a lightweight `circle.yml` file into each repository as well.
 
 ## Setting up Circle CI
 
