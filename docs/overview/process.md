@@ -22,8 +22,6 @@ deployment](http://martinfowler.com/bliki/ContinuousDelivery.html) to remove the
 At the outset of every quarter (i.e. 12 weeks) teams get together to discuss
 their objectives after talking to various stakeholders around the business.
 
-### Q3
-
 Here are the plans for Q3, August - September 2015 (2 months) :-
 
 The focus is on these six things,
