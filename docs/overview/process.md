@@ -22,7 +22,22 @@ deployment](http://martinfowler.com/bliki/ContinuousDelivery.html) to remove the
 At the outset of every quarter (i.e. 12 weeks) teams get together to discuss
 their objectives after talking to various stakeholders around the business.
 
-Here are the current plans for Q2, May - July 2015 :-
+Here are the plans for **Q3**, August - September 2015 (2 months) :-
+
+The focus is on these four things,
+
+1. Team Frequency and Recency: MyFT enhancements; "Recommend"; include other content (video etc.)
+1. Team MyFt: Clippings, MyFT API.
+1. Team Frontpage: Homepage enhancements, more users scrolling further (including front page Markets Data component).
+1. Team Engagement: Article page enhancements, onward journeys (related & broader links), design/component improvements.
+1. Team Usage and Anonymous: B2B/B2C prompts & onsite marketing messaging.
+1. Team Platform: Monitoring, service levels, QA, audience migration.
+
+Which is to also include a set of [miscellaneous
+features](https://docs.google.com/presentation/d/1oTOlc115Sr8xYCrqZOqWtn57fyl91lri8itoRWpp1oA/edit),
+divided amongst the teams.
+
+Here were the plans for **Q2**, May - July 2015 (3 months) :-
 
 - [Team: Engagement](https://docs.google.com/presentation/d/1tBlnPyzBW_LLX2tkAi-Y8ez9Dh-QOPfl0om_PyFyvzE/edit)
 - [Team: Anonymous Experience](https://docs.google.com/presentation/d/1h-YF7OQSgQrkguJ3fjkTtfN3x0_7oMrcZar8Ooxeis8/edit#slide=id.p)
@@ -30,7 +45,7 @@ Here are the current plans for Q2, May - July 2015 :-
 - [Team: Styleguide](https://docs.google.com/document/d/1rT5njibCzPXtpegLvvfYdLkpn7lPHSOG18B0yFFU4yQ/edit)
 - [Team: Usage](https://docs.google.com/document/d/1mpxcELXDHPyXj9-KjfQAW2-H1MnPNJEG8ZrgoM4ql4Y/edit)
 
-Here's the [Q1 plan](http://matt.chadburn.co.uk/drop/q1.next.png).
+The [**Q1** plan](http://matt.chadburn.co.uk/drop/q1.next.png). 
 
 ## Weekly
 
@@ -41,11 +56,7 @@ Next values independent thought. Make sure you come to this meeting with a plan
 with what you and your team want to achieve for the week. Ideally you'll be focussed
 on improving a specific metric or two. 
 
-Every **Thursday** a product manager will ask you to help compile a list of
-things your team have done this week. 'Done' typically means running in
-production.
-
-Every **Friday** afternoon the project's stakeholders meet to discuss the
+Every **Friday** morning the project's stakeholders meet to discuss the
 week's actvities and have a chance to feedback before the following Monday.
 
 ## Misc.
