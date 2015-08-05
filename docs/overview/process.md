@@ -28,6 +28,8 @@ Individual teams typically consist of:
 
 We do not have ‘project managers’ or ‘scrum masters’.  Instead, teams are accountable for delivering everything that they have committed to in their roadmaps (which they themselves write) on time.
 
+Additionally, teams are responsible for communicating their progress to the rest of the business in a clear and concise way and for ensuring the features they develop meet the needs of both the business and the product's users.
+
 ## Quarterly
 
 At the outset of every quarter (i.e. 12 weeks) teams get together to discuss
