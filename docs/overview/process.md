@@ -26,7 +26,7 @@ Individual teams typically consist of:
 - One or two designers
 - UX, where available
 
-We do not have ‘project managers’ or ‘scrum masters’ and instead teams are accountable for delivering everything that they have committed to in their roadmaps (which they themselves write) on time.
+We do not have ‘project managers’ or ‘scrum masters’.  Instead, teams are accountable for delivering everything that they have committed to in their roadmaps (which they themselves write) on time.
 
 ## Quarterly
 
