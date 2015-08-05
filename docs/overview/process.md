@@ -17,6 +17,17 @@ loops](http://www.startuplessonslearned.com/2010/09/good-enough-never-is-or-is-i
 We practice [continuous
 deployment](http://martinfowler.com/bliki/ContinuousDelivery.html) to remove the risks around software delivery.
 
+## Team structure
+
+Individual teams typically consist of:
+
+- A product owner
+- Some developers
+- One or two designers
+- UX, where available
+
+We do not have ‘project managers’ or ‘scrum masters’ and instead teams are accountable for delivering everything that they have committed to in their roadmaps (which they themselves write) on time.
+
 ## Quarterly
 
 At the outset of every quarter (i.e. 12 weeks) teams get together to discuss
