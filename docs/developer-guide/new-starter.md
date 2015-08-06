@@ -47,7 +47,7 @@ Almost all Next applications rely on the following tools installed globally on d
 
 - [Origami Build Tools](https://github.com/Financial-Times/origami-build-tools/)
 - [Next Router](http://git.svc.ft.com/projects/NEXT/repos/router/browse)
-- [Heroku Toolbelt](https://toolbelt.heroku.com/)
+- [Heroku Toolbelt](https://toolbelt.heroku.com/) with the docker plugin `heroku plugins:install heroku-docker`
 
 In order to work with our ecosystem of components you will need to point bower at the origami registry. Running the following in terminal will do this for you.
 
