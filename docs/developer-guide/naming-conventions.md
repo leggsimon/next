@@ -46,6 +46,12 @@ We use the following comments to help communicate certain things about the code.
 
 We monitor these here - [http://next-radiator.ft.com/code/HACK](http://next-radiator.ft.com/code/HACK).
 
+# Environment variables
+
+Environment variables should be written in uppercase and underscore separated. Keys should be suffixed with `_KEY`. Names for specific variables are as follows:
+
+- `FT_API_KEY` - API V2 key
+- `ELASTIC_SEARCH_HOST` - Path to the ES instance
 
 # Standardised names for classes & data attributes
 
@@ -53,12 +59,12 @@ Next websites use the following conventions for data-attributes and classes:
 
 ## Data attributes
 
-* data-content-id  
+* data-content-id
     {capi uuid} or clamo-{fastft id} or ... extend sensibly as we bring in other content sources
-* data-concept-id  
-    id of metadatum, wherever they be used (container for stream, tags etc.)  
+* data-concept-id
+    id of metadatum, wherever they be used (container for stream, tags etc.)
     for v1 metadata asearch string of the form `taxonomy:"name"` is used as the id
-* data-trackable  
-    used by the tracking system to determine the dom path to the element being tracked  
+* data-trackable
+    used by the tracking system to determine the dom path to the element being tracked
     pipe-separated list of contextual information
 
