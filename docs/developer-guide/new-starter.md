@@ -55,4 +55,10 @@ In order to work with our ecosystem of components you will need to point bower a
 [ -e ~/.bowerrc ] || echo '{ "registry": { "search": [ "http://registry.origami.ft.com", "https://bower.herokuapp.com" ] } }' > ~/.bowerrc
 ```
 
+You can join all the next applications with the following Heroku command
+
+```
+heroku apps --org financial-times --all | grep ft-next | cut -d ' ' -f 1 | xargs -I , echo "heroku apps:join -a ," | /bin/sh
+```
+
 If you experience any problems take a look at our [troubleshooting guide](/next/docs/developer-guide/troubleshooting/). If your problem isn't listed there but you manage to solve it, please add the solution to the guide.
