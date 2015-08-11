@@ -39,8 +39,9 @@ Here are the plans for Q3, August - September 2015 (2 months) :-
 
 The focus is on these six things,
 
-1. Team Frequency and Recency: MyFT enhancements; "Recommend"; include other content (video etc.)
-1. Team MyFt: Clippings, MyFT API.
+1. Team [Frequency and Recency](https://docs.google.com/presentation/d/1efHFDYB9ubu1RTTD5Rq5HwEhcQgLU5aqzjIJHAfRN10/edit): 
+    - MyFT enhancements; "Recommend"; include other content (video etc.)
+    - Clippings, MyFT API.
 1. Team Frontpage: Homepage enhancements, more users scrolling further (including front page Markets Data component).
 1. Team Engagement: Article page enhancements, onward journeys (related & broader links), design/component improvements.
 1. Team [Conversion and Usage](https://docs.google.com/presentation/d/1Dy9RL0sq-f9LtH6kT8kdeLzG3q7JkBkuSRyQjnvSs6g/edit): B2B/B2C prompts & onsite marketing messaging.
