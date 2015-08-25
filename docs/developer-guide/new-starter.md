@@ -25,6 +25,7 @@ permalink: /docs/developer-guide/new-starter/
   * If you are using SSH don't forget to [generate new keys] (https://help.github.com/articles/generating-ssh-keys/) for your laptop and add to Git and Stash 
 - Other tools
   * Ask to be invited to the Next team on Sentry.
+  * Ask to be invited to the PagerDuty and added to a Bug challenge schedule.
   * Ask to be invited to the FT team on Pingdom (optional).
   * Ask to be invited to the Financial Times on Heroku. You'll need to setup a new Heroku account with your FT.com email (Please enable two factor authentication).
     * now would be a good time to [install heroku toolbelt] (https://toolbelt.heroku.com/)
