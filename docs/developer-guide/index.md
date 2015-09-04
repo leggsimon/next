@@ -49,3 +49,7 @@ Many applications also implement some or all of:-
 - Create a new branch and make the desired change.
 - Commit that change and create a pull request back to that application.
 - Drop a note in the Next rooms on [Slack](https://financialtimes.slack.com/messages/ft-next/), if you have an @ft.com email address, next.team@ft.com.
+- It's your responsibility to find and nag someone to review your pull request.  They will typically add a :+1: or otherwise in a comment.
+- Once you've addressed any concerns they have as pull request creator, it's your responsibility to merge the pull request.
+- Please note for applications merging a pull request is the same as a production deploy — and as the merger of a pull request you are responsible for the successful deploy of that merge.
+- For components you are responsible for creating a release (sometimes this means running a command line script, sometimes it's just creating a new tag or release on that repository).
