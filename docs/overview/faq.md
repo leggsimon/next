@@ -42,8 +42,10 @@ use FT Platform.
 
 ## What is the support agreement of Next?
 
-Next is a [Bronze-level product](https://docs.google.com/spreadsheets/d/1R2cm_MkcLKe6ceoIiFYfnkbE-gXjNMs9JTbvUXbSrs0). This means it's not classed as business-critical and support out-of-hours is 'best efforts' with longer allowance for recovery times. The level of support is agreed with the product management team.
+We have different service levels for different services that make up Next.  [Current and planned service levels are documented on our ‘radiator’ app.](http://next-radiator.ft.com/apps)
+
+We currently consider the **opt out journey** as a Platinum level service.  We guarantee the customer can always get to content either on Next or by opting out and going back to FT.com.  [How we meet the requirements of Platinum-level product tier.](/next/docs/platinum)
+
+The rest of Next is a [Bronze-level product](https://docs.google.com/spreadsheets/d/1R2cm_MkcLKe6ceoIiFYfnkbE-gXjNMs9JTbvUXbSrs0). This means it's not classed as business-critical and support out-of-hours is 'best efforts' with longer allowance for recovery times. The level of support is agreed with the product management team.
 
 As we invite more traffic on to Next the need to provide greater support will grow.
-
-We are currently working on the monitoring and alerting systems that will allow us to increase our opt-in/out system to platinum service tier.
