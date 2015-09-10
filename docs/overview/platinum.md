@@ -37,7 +37,7 @@ We will provide a warranty of at least 2 weeks.
 
 ### General — confirm product rating
 
-The product team continuously re-assess what the most appropriate service level are for different features with collaboration with our depenedencies and the Next engineering team.
+The product team continuously re-assess what the most appropriate service level are for different features with collaboration with our dependencies and the Next engineering team.
 
 ### QA delivery tasks
 
