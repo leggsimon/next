@@ -1,7 +1,7 @@
 ---
 layout: default
 title: How some Next apps meet Platinum SLAs
-section: Developer guide
+section: Overview
 permalink: /docs/overview/platinum/
 ---
 
