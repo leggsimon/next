@@ -129,7 +129,7 @@ It's not clear what this means.
 
 It's not clear what this means.
 
-## Plaform requirements
+## Platform requirements
 
 ### Developer workflow
 
