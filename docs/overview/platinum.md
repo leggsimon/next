@@ -46,18 +46,18 @@ We follow the spirit rather than the letter of these rules as many of the detail
 ### Automation
 
 - We automatically monitor performance continuously, for example [opt-out-form](http://next-radiator.ft.com/apps/opt-out-form/graphs).
-- We have automated tests, where appropriate and we maintain them.
+- We have automated tests, where appropriate, and we maintain them.
 - We use automated device testing, where appropriate.
 
 #### Dedicated test environment available & maintained 24/7
 
-We follow the spirit rather than the letter of these rules.  Our test environments for most applications are spun up dynamically and shut down, as required per application.
+We follow the spirit rather than the letter of these rules.  Our test environments for most applications are spun up dynamically and shut down, as required, per application.
 
 ### General delivery tasks
 
 #### Confirm performance SLA's
 
-next has a performance goals that apply to all applications.
+Next has performance goals that apply to all applications.
 
 #### Confirm delivery pipeline
 
@@ -73,7 +73,7 @@ It's not clear what this means.
 
 #### Health check dashboard
 
-We wanted to use [the FT healthcheck aggregator](http://healthcheck.ft.com/).  In fact, a pull request has even been made and merged to include some Next apps in it but because the Jenkins jobs on it has been failing we weren't able to deploy it.
+We want to use [the FT healthcheck aggregator](http://healthcheck.ft.com/).  In fact, a pull request has even been made and merged to include some Next apps in it but because the Jenkins jobs on it has been failing we weren't able to deploy it.  We are continuing to discuss this with the team that maintains this application.
 
 #### Error dashboard
 
@@ -125,7 +125,7 @@ We are collating the information required for run books on the Next [‘radiator
 
 It's not clear what this means.
 
-#### Recovery Testing
+#### Recovery testing
 
 It's not clear what this means.
 
@@ -135,13 +135,13 @@ It's not clear what this means.
 
 We have considered all of:-
 
-- Speed to Market
-- Self-Service
-- Repeatable Delivery Mechanism
+- Speed to market
+- Self-service
+- Repeatable delivery mechanism
 - Suitable for complexity
 - Security
 - EU/UK Legal / Regulatory
-- Connectivity to Internal Systems
+- Connectivity to internal systems
 
 ### Platforms
 
