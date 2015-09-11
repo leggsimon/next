@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Process 
+title: Process
 section: Overview
 permalink: /docs/overview/process/
 ---
@@ -39,12 +39,13 @@ Here are the plans for Q3, August - September 2015 (2 months) :-
 
 The focus is on these six things,
 
-1. Team Frequency and Recency: MyFT enhancements; "Recommend"; include other content (video etc.)
-1. Team MyFt: Clippings, MyFT API.
+1. Team [Frequency and Recency](https://docs.google.com/presentation/d/1efHFDYB9ubu1RTTD5Rq5HwEhcQgLU5aqzjIJHAfRN10/edit):
+    - MyFT enhancements; "Recommend"; include other content (video etc.)
+    - Clippings, MyFT API.
 1. Team Frontpage: Homepage enhancements, more users scrolling further (including front page Markets Data component).
-1. Team Engagement: Article page enhancements, onward journeys (related & broader links), design/component improvements.
-1. Team Usage and Anonymous: B2B/B2C prompts & onsite marketing messaging.
-1. Team Platform: Monitoring, service levels, QA, audience migration.
+1. Team [Engagement](https://docs.google.com/a/ft.com/presentation/d/1y1es_0RTepNRxIaZgksftARzuUbp58sIMOZujWL1ptM/edit?usp=sharing): Article page enhancements, onward journeys (related & broader links), design/component improvements.
+1. Team [Conversion and Usage](https://docs.google.com/presentation/d/1Dy9RL0sq-f9LtH6kT8kdeLzG3q7JkBkuSRyQjnvSs6g/edit): B2B/B2C prompts & onsite marketing messaging.
+1. Team [Platform](https://docs.google.com/presentation/d/1U0-NSoujGLyqd22Ms_2WH6jtn8bN6xjHwT5rLH08iiw/edit#slide=id.g44b649aef_02): Monitoring, service levels, QA, audience migration.
 
 Which is to also include a set of [miscellaneous
 features](https://docs.google.com/presentation/d/1oTOlc115Sr8xYCrqZOqWtn57fyl91lri8itoRWpp1oA/edit),
@@ -60,7 +61,7 @@ Here were the plans for Q2, May - July 2015 (3 months) :-
 - [Team: Styleguide](https://docs.google.com/document/d/1rT5njibCzPXtpegLvvfYdLkpn7lPHSOG18B0yFFU4yQ/edit)
 - [Team: Usage](https://docs.google.com/document/d/1mpxcELXDHPyXj9-KjfQAW2-H1MnPNJEG8ZrgoM4ql4Y/edit)
 
-The [Q1 plan](http://matt.chadburn.co.uk/drop/q1.next.png). 
+The [Q1 plan](http://matt.chadburn.co.uk/drop/q1.next.png).
 
 A long term horizon view is available too :-
 
@@ -75,7 +76,7 @@ ahead and the week just gone.
 
 Next values independent thought. Make sure you come to this meeting with a plan
 with what you and your team want to achieve for the week. Ideally you'll be focussed
-on improving a specific metric or two. 
+on improving a specific metric or two.
 
 Every **Friday** morning the project's stakeholders meet to discuss the
 week's actvities and have a chance to feedback before the following Monday.
