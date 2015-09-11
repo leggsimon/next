@@ -57,7 +57,7 @@ We follow the spirit rather than the letter of these rules.  Our test environmen
 
 #### Confirm performance SLA's
 
-Next has performance goals that apply to all applications.
+Next has [performance goals](http://financial-times.github.io/next/docs/developer-guide/qa/#performance-testing) that apply to all applications.
 
 #### Confirm delivery pipeline
 
