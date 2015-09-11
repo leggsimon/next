@@ -163,7 +163,7 @@ No platinum Next apps have persistence.
 We follow the spririt rather than the letter of these rules.  Much of the ‘definition’ and ‘sign off’ process is largely not applicable to the way Next works.
 
 - We do load testing.
-- We have performance targets.
+- We have [performance targets](http://financial-times.github.io/next/docs/developer-guide/qa/#performance-testing).
 - We measure our application performance on the server.
 - We measure the performance of our dependencies.
 - We collect real user data and we measure performance synthetically with Web Page Test.
