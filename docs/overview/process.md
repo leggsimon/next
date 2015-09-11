@@ -45,7 +45,7 @@ The focus is on these six things,
 1. Team Frontpage: Homepage enhancements, more users scrolling further (including front page Markets Data component).
 1. Team [Engagement](https://docs.google.com/a/ft.com/presentation/d/1y1es_0RTepNRxIaZgksftARzuUbp58sIMOZujWL1ptM/edit?usp=sharing): Article page enhancements, onward journeys (related & broader links), design/component improvements.
 1. Team [Conversion and Usage](https://docs.google.com/presentation/d/1Dy9RL0sq-f9LtH6kT8kdeLzG3q7JkBkuSRyQjnvSs6g/edit): B2B/B2C prompts & onsite marketing messaging.
-1. Team Platform: Monitoring, service levels, QA, audience migration.
+1. Team [Platform](https://docs.google.com/presentation/d/1U0-NSoujGLyqd22Ms_2WH6jtn8bN6xjHwT5rLH08iiw/edit#slide=id.g44b649aef_02): Monitoring, service levels, QA, audience migration.
 
 Which is to also include a set of [miscellaneous
 features](https://docs.google.com/presentation/d/1oTOlc115Sr8xYCrqZOqWtn57fyl91lri8itoRWpp1oA/edit),
