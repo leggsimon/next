@@ -77,7 +77,9 @@ We want to use [the FT healthcheck aggregator](http://healthcheck.ft.com/).  In 
 
 #### Error dashboard
 
-We have [an error dashboard](https://app.getsentry.com/nextftcom/).
+We want to use [Dashing](http://dashing.ft.com/).  I believe our apps will start to appear here automatically once our apps are being aggregated by the health check aggregator (see above).
+
+We capture errors in production through Sentry, which has [a nice dashboard](https://app.getsentry.com/nextftcom/) too.
 
 #### Performance dashboard
 
