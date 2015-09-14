@@ -42,7 +42,7 @@ The focus is on these six things,
 1. Team [Frequency and Recency](https://docs.google.com/presentation/d/1efHFDYB9ubu1RTTD5Rq5HwEhcQgLU5aqzjIJHAfRN10/edit):
     - MyFT enhancements; "Recommend"; include other content (video etc.)
     - Clippings, MyFT API.
-1. Team Frontpage: Homepage enhancements, more users scrolling further (including front page Markets Data component).
+1. Team [Frontpage](https://docs.google.com/presentation/d/1_y3AqbpGVgWiXV52Yr06MOlSAUiI0rmu0j33vrBxyjs/edit#slide=id.gddc754acc_0_51): Homepage enhancements, more users scrolling further (including front page Markets Data component).
 1. Team [Engagement](https://docs.google.com/a/ft.com/presentation/d/1y1es_0RTepNRxIaZgksftARzuUbp58sIMOZujWL1ptM/edit?usp=sharing): Article page enhancements, onward journeys (related & broader links), design/component improvements.
 1. Team [Conversion and Usage](https://docs.google.com/presentation/d/1Dy9RL0sq-f9LtH6kT8kdeLzG3q7JkBkuSRyQjnvSs6g/edit): B2B/B2C prompts & onsite marketing messaging.
 1. Team [Platform](https://docs.google.com/presentation/d/1U0-NSoujGLyqd22Ms_2WH6jtn8bN6xjHwT5rLH08iiw/edit#slide=id.g44b649aef_02): Monitoring, service levels, QA, audience migration.
