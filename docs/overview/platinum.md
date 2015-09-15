@@ -125,7 +125,7 @@ We are collating the information required for run books on the Next [‘radiator
 
 #### Automated validation post release
 
-It's not clear what this means.
+We use healthchecks and monitoring to validate releases.
 
 #### Recovery testing
 
