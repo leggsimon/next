@@ -22,10 +22,8 @@ Create a pull request to the [config-vars repository](http://git.svc.ft.com:8080
 Add the following `circle.yml` file to the root of your application's repository:-
 
 	machine:
-	  services:
-	    - docker
 	  node:
-	    version: 0.12.2
+	    version: 0.12.7
 
 	deployment:
 	  production:
@@ -39,4 +37,4 @@ Add the following `circle.yml` file to the root of your bower component's reposi
 
 	machine:
 	  node:
-	    version: 0.12.2
+	    version: 0.12.7
