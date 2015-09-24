@@ -23,7 +23,7 @@ Add the following `circle.yml` file to the root of your application's repository
 
 	machine:
 	  node:
-	    version: 0.12.7
+	    version: 4.1.1
 
 	deployment:
 	  production:
@@ -37,4 +37,4 @@ Add the following `circle.yml` file to the root of your bower component's reposi
 
 	machine:
 	  node:
-	    version: 0.12.7
+	    version: 4.1.1
