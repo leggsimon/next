@@ -70,12 +70,11 @@ Next Feedback
 
  - [https://groups.google.com/a/ft.com/forum/#!forum/next.feedback](https://groups.google.com/a/ft.com/forum/#!forum/next.feedback) 
  - The email address for this group is next.feedback@ft.com. 
- - Specifically look for feedback from individuals; if someone has a question or a bug report, respond to it in a professional manner. Be polite and be bold.
+ - That email address is monitored by [FT Customer Support (Steve Gibson)](mailto:Steve%20Gibson%20<steve.gibson@ft.com>%20)
  - (This also comes in a [weekly report](https://drive.google.com/a/ft.com/folderview?id=0B8Ak6I2NSznUblItWm5leUVaWmM))
 
 Sentry
 
- - Top ten: [https://app.getsentry.com/nextftcom/teams/nextftcom-1/](https://app.getsentry.com/nextftcom/teams/nextftcom-1/) 
  - All projects: [https://app.getsentry.com/nextftcom/](https://app.getsentry.com/nextftcom/) 
  - Further reading: [http://sentry.readthedocs.org/en/latest/](http://sentry.readthedocs.org/en/latest/) 
 
