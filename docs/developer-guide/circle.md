@@ -7,7 +7,7 @@ permalink: /docs/developer-guide/circle/
 
 # Introduction to Circle CI
 
-We are currently migrating to Circle CI for applications and bower components.  (npm modules should continue using Travis in the existing, undocumented way)
+We are currently migrating to Circle CI for applications, npm modules and bower components.
 
 ## Brief Architecture
 
@@ -31,7 +31,7 @@ Add the following `circle.yml` file to the root of your application's repository
 	    commands:
 	      - make deploy
 
-### `circle.yml` for bower components (not npm modules)
+### `circle.yml` for bower components and npm modules
 
 Add the following `circle.yml` file to the root of your bower component's repository:-
 
