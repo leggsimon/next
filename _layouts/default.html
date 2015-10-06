@@ -98,9 +98,16 @@
 					<li{% if page.title == 'Security' %} aria-selected="true"{% endif %}>
 						<a href="{{ site.baseurl }}/docs/developer-guide/security/">Security</a>
 					</li>
+					<li{% if page.title == 'S3 Bucket Replication' %} aria-selected="true"{% endif %}>
+					<a href="{{ site.baseurl }}/docs/developer-guide/s3-bucket-replication/">S3 Bucket Replication</a>
+					</li>
+					<li{% if page.title == 'Creating Multi Region Apps' %} aria-selected="true"{% endif %}>
+					<a href="{{ site.baseurl }}/docs/developer-guide/multi-region-apps/">Creating Multi Region Apps</a>
+					</li>
 					<li{% if page.title == 'Troubleshooting' %} aria-selected="true"{% endif %}>
 						<a href="{{ site.baseurl }}/docs/developer-guide/troubleshooting/">Troubleshooting</a>
 					</li>
+
 				</ul>
 
 				{% endif %}
