@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Creating Multi Region Apps
+title: Setting up Multi Region Apps
 section: Developer guide
 permalink: /docs/developer-guide/multi-region-apps/
 ---
