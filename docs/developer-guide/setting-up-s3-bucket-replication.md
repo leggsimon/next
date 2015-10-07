@@ -1,6 +1,6 @@
 ---
 layout: default
-title: S3 Bucket Replication
+title: Setting up Multi Region Static Hosting
 section: Developer guide
 permalink: /docs/developer-guide/s3-bucket-replication/
 ---
