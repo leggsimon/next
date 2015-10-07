@@ -7,16 +7,15 @@ permalink: /docs/developer-guide/multi-region-apps/
 
 # Creating a new Multi-Region App (or converting an existing one)
 
-Next-build tools has some new commands which make use of Heroku's new [pipeines](https://devcenter.heroku.com/articles/pipelines) feature, which make it easier to deploy apps to multiple regions without increasing the deploy time.
+`next-build-tools` has some new commands which make use of Heroku's new [pipeines](https://devcenter.heroku.com/articles/pipelines) feature, which make it easier to deploy apps to multiple regions without increasing the deploy time.
 
 ## 1: Install Dependencies
 
-These steps will require next-build-tools version 5 or greater so please update your package.json file in your app before continuing
+These steps will require `next-build-tools` **version 5** or greater so please update your package.json file in your app before continuing and [follow the upgrade steps](https://github.com/Financial-Times/next-build-tools/).
 
-You will also need the heroku pipelines add- on.  Run this command to get it:
+You will also need the heroku pipelines add-on.  Run this command to get it:
 
     heroku plugins:install heroku-pipelines
-    
 
 ## 2: Set up a pipeline:
 
@@ -80,7 +79,7 @@ Run this in a branch first and check the float task works correctly, then merge 
 
 ## 5: Amend the service registry
 
-Don't do this until you have verified that your app is working fine in it's new locations.  Once you have, then amend the service registry.  The **nodes** property for your app might well look like this:
+Don't do this until you have verified that your app is working fine in its new locations.  Once you have, then amend the service registry.  The **nodes** property for your app might well look like this:
 
     nodes: [
     	"http://ft-next-my-app.herokuapp.com"
