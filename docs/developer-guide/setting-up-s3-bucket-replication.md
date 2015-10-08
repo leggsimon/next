@@ -55,7 +55,10 @@ The naming convention for the account is the EU bucket name with a `-prod` suffi
 
 You might like to say this:-
 
-	Hi there, Could we have another IAM account set up please?  Username: ft-next-access-metadata-prod.  Many thanks.
+	Hi there, Could we have another IAM account set up please?
+	Username: `ft-next-access-metadata-prod`
+	AWS Account: `InfraProd`
+	Many thanks,
 
 ##7. Now sit back and wait for the guys in infrastructure to do their things
 
