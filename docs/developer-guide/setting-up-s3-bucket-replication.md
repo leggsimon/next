@@ -51,7 +51,7 @@ From SalesForce click __technology self service__ then choose __TECHNOLOGY ONLY 
 
 The request type is "Infrastructure Request" associated program is "Strategic Products" and Infrastructure requests is "standard request".
 
-The naming convention for the account is the EU bucket name, i.e. `ft-next-${serviceName}`.
+The naming convention for the account is the EU bucket name with a `-prod` suffix, i.e. `ft-next-${serviceName}-prod`.
 
 You might like to say this:-
 
