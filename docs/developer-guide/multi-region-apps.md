@@ -40,8 +40,13 @@ And a deploy task which looks like this:
 
     deploy:
         nbt ship -m
-
+        
 The `-m` option is again for multi-region apps - leave this off if you don't have a US app.  
+
+Also, you no longer need a `tidy` task so change it to this:
+
+    tidy:
+        #no longer needed
 
 ### If your app has smoke tests
 
