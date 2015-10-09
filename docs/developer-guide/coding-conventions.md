@@ -34,8 +34,10 @@ A few looser patterns that have emerged, but aren't enforced, are:
 ## Application and module structure
 
 ### User-facing applications
+
 Any user facing applications *must* follow this structure (`next-build-tools` relies on much of it)
 
+```
 
 	root
 	  \_ client // Should contain no top level scss or js directories
@@ -66,7 +68,6 @@ Any user facing applications *must* follow this structure (`next-build-tools` re
 	  .travis.yml
 	  .gitignore // must ignore /public/, /bower_components/ and /node_modules/
 	  // other config/deployment files are ok in the root too
-
 
 ### API services
 Use common sense, but stick to as much of the structure above as possible, particularly with regard to the config files in the directory root.
