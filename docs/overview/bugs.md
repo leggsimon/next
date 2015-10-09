@@ -54,13 +54,13 @@ We have several other ways logging problems for both customers and FT staff.
 
 - [https://next.ft.com/survey](https://next.ft.com/survey) for customers.
 
-#### Humans
+#### Humans
 
 We also have a team of customer services, product consultants and assorted
 other ways of discovering valuable information about problems people are
-having. These are all fed back in to one of the above channels.
+having. This is typically fed back in to one of the above channels.
 
-## But where do I log my bug
+## But where do I log my bug?
 
 Jira is probably the best place to put something if you want to log it and make
 sure it doesn’t get lost. We will direct customer services and other FT teams
@@ -69,6 +69,4 @@ at this as a first port of call.
 [Jay](mailto:jay.sethi@ft.com) owns the responsibility of triaging Jira and
 communicating it the relevant teams, and ensuring any priorities are raised.
 
-_Nb. Jira is not a place for user stories, or feature requests or an excuse not
-to talk to each other directly. Bugs that haven’t been resolved will be
-automatically closed after a few weeks._
+Bugs that haven’t been resolved will be automatically closed after a few weeks.
