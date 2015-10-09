@@ -5,10 +5,12 @@ section: Developer guide
 permalink: /docs/developer-guide/qa/
 ---
 
+# QA
+
 ## Environments
 
 Next has no internal dev/test/stage/etc environments. You can provision and run
-ad-hoc applications on Heroku or FT Platform. You can run the whole stack on
+ad-hoc applications on Heroku. You can run the whole stack on
 your localhost. These are the environments where we conduct QA.
 
 Mostly, everyone connects to production APIs from every environment.
@@ -22,6 +24,8 @@ code in to production that isn’t ready for public consumption. The team (and F
 staff) can switch these on to test features. Often, early versions of features
 are incomplete and/or experimental and don’t work across a full range of
 browsers.
+
+Flags automatically expire, so features automatically switch off.  A list of expired and soon-to-expire features is [available on our dashboard](http://ft-next-graphite-dashboard.herokuapp.com/radiator).
 
 ## Process
 
@@ -41,10 +45,11 @@ Each component can be cloned from the repository and `make test` executed, or
 
 Typically a test will involve :-
 
-- Running `origami-build-tools verify` on the code 
-- linting etc. 
+- Running `origami-build-tools verify` on the code (or `next-build-tools verify`, which uses Origami build tools internally), which provides linting.
 - Some unit tests.  
 - (Sometimes) an integration test over headless HTTP.
+- (Sometimes) automated tests running on real browsers in the cloud.
+- (Sometimes) screenshot diffing to detect visual changes (when things change a comment will be added to the pull request with links to the changes)
 
 We dynamically provision an instance of the application for each pull request
 and smoke test in several browsers (via Sauce Labs).
@@ -58,7 +63,7 @@ code they ship works in our supported browsers.
 
 To catch live errors from the client and server we log exceptions to
 [Sentry](https://getsentry.com). Each day a developer is on [bug
-duty](/docs/developer-guide/bug-duty/) and will monitor Sentry for problems.
+challenge](/docs/developer-guide/bug-challenge/) and will monitor Sentry for problems.
 
 Next code is [heavily
 instrumented](https://github.com/Financial-Times/next-metrics) and metrics
