@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Logging bugs and defects 
+title: Logging defects 
 section: Overview
 permalink: /docs/overview/bugs/
 ---
 
-# Logging bugs and defects 
+# Logging defects 
 
 You think you've found a problem or defect on Next and wonder what to do?
 Here's some guidance from the team.
