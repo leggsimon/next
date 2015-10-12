@@ -44,7 +44,22 @@ From SalesForce click __technology self service__ then choose __TECHNOLOGY ONLY 
 The request type is "Infrastructure Request" associated program is "Strategic Products" and Infrastructure requests is "standard request".
 
 When filling in the details be sure to provide the name and region of the source and destination buckets.
-    
-##6. Now sit back and wait for the guys in infrastructure to do their thing
+
+##6. Open another ticket in SalesForce to set up an ‘IAM’ user with an access key
+
+From SalesForce click __technology self service__ then choose __TECHNOLOGY ONLY requests__ from the menu on the right.
+
+The request type is "Infrastructure Request" associated program is "Strategic Products" and Infrastructure requests is "standard request".
+
+The naming convention for the account is the EU bucket name with a `-prod` suffix, i.e. `ft-next-${serviceName}-prod`.
+
+You might like to say this:-
+
+	Hi there, Could we have another IAM account with an access key set up please?
+	Username: `ft-next-access-metadata-prod`
+	AWS Account: `InfraProd`
+	Many thanks,
+
+##7. Now sit back and wait for the guys in infrastructure to do their things
 
 They are normally pretty responsive so it shouldn't take more than a couple of hours.
