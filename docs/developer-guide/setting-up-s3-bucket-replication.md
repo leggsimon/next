@@ -45,7 +45,7 @@ The request type is "Infrastructure Request" associated program is "Strategic Pr
 
 When filling in the details be sure to provide the name and region of the source and destination buckets.
 
-##6. Open another ticket in SalesForce to set up an ‘IAM’ user
+##6. Open another ticket in SalesForce to set up an ‘IAM’ user with an access key
 
 From SalesForce click __technology self service__ then choose __TECHNOLOGY ONLY requests__ from the menu on the right.
 
@@ -55,7 +55,7 @@ The naming convention for the account is the EU bucket name with a `-prod` suffi
 
 You might like to say this:-
 
-	Hi there, Could we have another IAM account set up please?
+	Hi there, Could we have another IAM account with an access key set up please?
 	Username: `ft-next-access-metadata-prod`
 	AWS Account: `InfraProd`
 	Many thanks,
