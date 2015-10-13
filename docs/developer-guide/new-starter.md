@@ -22,7 +22,7 @@ permalink: /docs/developer-guide/new-starter/
   * Public repositories are on [GitHub](https://github.com/Financial-Times/), private on [Stash](http://git.svc.ft.com/projects/NEXT).  Repositories should be public if at all possible.  Do not create private repositories on GitHub.
   * Ask to be invited to [the Next team on GitHub](https://github.com/orgs/Financial-Times/teams/next).
   * Ask to be added as [an admin to the Next Stash repositories](http://git.svc.ft.com/plugins/servlet/projectpermissions/NEXT).
-  * If you are using SSH don't forget to [generate new keys] (https://help.github.com/articles/generating-ssh-keys/) for your laptop and add to Git and Stash 
+  * If you are using SSH don't forget to [generate new keys] (https://help.github.com/articles/generating-ssh-keys/) for your laptop and add to Git and Stash
 - Other tools
   * Ask to be invited to the Next team on Sentry.
   * Ask to be invited to the PagerDuty and added to a Bug challenge schedule.
@@ -59,3 +59,31 @@ In order to work with our ecosystem of components you will need to point bower a
 ```
 
 If you experience any problems take a look at our [troubleshooting guide](/next/docs/developer-guide/troubleshooting/). If your problem isn't listed there but you manage to solve it, please add the solution to the guide.
+
+# Peer review and Pull requests
+
+1. Remember, our engineering choices mean most code changes, a) are unlikely to have catastrophic effects across the stack; b) can be rolled back fairly easily if there's a problem... so don't be scared of making mistakes.
+
+1. If a code change is relatively trivial there's no need to wait for a peer review. What does 'trivial' mean? Not an exact science, but if you feel the code changes
+
+	- are easy to comprehend
+	- affect a small number of lines/files
+	- don't affect much of our stack
+
+	and you don't have any real doubts over the quality of what you've written, then it's a good candidate to skip peer reviewing. There's no harm in asking for a peer review, but if it's not forthcoming don't hold back from merging anyway.
+
+1. For more significant changes always ask for a peer review by posting a link on the relevant channel on slack or cc-ing one or more developers in github (some teams also use the github-slack integration). If no-one reviews your code after a while either
+
+	- go and ask somebody directly to do so. Stand next to them tutting and checking your watch if necessary.
+	- review it yourself - the time spent waiting will have given you fresh eyes. If you feel confident everything's OK go ahead and merge
+
+1. For larger changes, particularly if they involve changes to more than one repo, consider putting them behind a feature flag (for many user facing changes you should be doing this anyway). This way you and other internal staff can experiment with toggling the feature to see the effect
+
+1. Our test coverage varies from one app to another but in general tests are a valuable thing. If the repo you're working on is already well covered by tests add some to cover your changes too. If its test coverage is poor/non-existent don't let that stop you from making a start by adding some to cover your new code.
+
+1. **It's more important to verify your code works in the wild *after* deploying than it is to get the code approved by somebody *before* deploying**. A :+1: does not mean your code actually works so
+
+	- If releasing a change to an app keep an eye on it in next-radiator and sentry (changes take about 10 minutes to show up due to heroku preboot)
+	- If releasing a component, redeploy an app that consumes it and check the app to see if everything's ok
+
+1. Take all the above with a pinch of salt and trust your judgement :)
