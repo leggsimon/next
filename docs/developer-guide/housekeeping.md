@@ -13,7 +13,7 @@ An elephant never forgets...
 
 - Is your app monitored by [_next-status_](http://git.svc.ft.com/projects/NEXT/repos/status/browse)?
 - Does your app have a friendly hostname?
-- Does your app have a Codeship or Jenkins job?
+- Does your app have a Travis or Jenkins job?
 - Is your app deployed by [next-build-tools](https://github.com/Financial-Times/next-build-tools)?
 - Are your app’s environment variables in the [next-config-vars](http://git.svc.ft.com/projects/NEXTPRIVATE/repos/config-vars/browse) API?
 - Does it implement next-metrics?

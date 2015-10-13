@@ -38,6 +38,15 @@
 					<li{% if page.title == 'FAQ' %} aria-selected="true"{% endif %}>
 						<a href="{{ site.baseurl }}/docs/overview/faq">FAQ</a>
 					</li>
+					<li{% if page.title == 'Logging defects' %} aria-selected="true"{% endif %}>
+						<a href="{{ site.baseurl }}/docs/overview/bugs">Bugs</a>
+					</li>
+					<li{% if page.title == 'Process' %} aria-selected="true"{% endif %}>
+						<a href="{{ site.baseurl }}/docs/overview/process">Process</a>
+					</li>
+					<li{% if page.title == 'How some Next apps meet Platinum SLAs' %} aria-selected="true"{% endif %}>
+						<a href="{{ site.baseurl }}/docs/overview/platinum/">How we achieve platinum</a>
+					</li>
 				</ul>
 				{% endif %}
 				</li>
@@ -50,8 +59,14 @@
 					</li>
 					<li{% if page.title == 'Browser testing' %} aria-selected="true"{% endif %}>
 						<a href="{{ site.baseurl }}/docs/developer-guide/browser-testing">Browser testing</a>
-					<li{% if page.title == 'Bug duty' %} aria-selected="true"{% endif %}>
-						<a href="{{ site.baseurl }}/docs/developer-guide/bug-duty">Bug duty</a>
+					<li{% if page.title == 'Bug challenge' %} aria-selected="true"{% endif %}>
+						<a href="{{ site.baseurl }}/docs/developer-guide/bug-challenge">Bug challenge</a>
+					</li>
+					<li{% if page.title == 'Coding conventions' %} aria-selected="true"{% endif %}>
+						<a href="{{ site.baseurl }}/docs/developer-guide/coding-conventions">Coding conventions</a>
+					</li>
+					<li{% if page.title == 'Sentry' %} aria-selected="true"{% endif %}>
+						<a href="{{ site.baseurl }}/docs/developer-guide/sentry">Sentry</a>
 					</li>
 					<li{% if page.title == 'Setting up Jenkins' %} aria-selected="true"{% endif %}>
 						<a href="{{ site.baseurl }}/docs/developer-guide/jenkins">CI - Jenkins</a>
@@ -59,8 +74,14 @@
 					<li{% if page.title == 'Setting up Circle CI' %} aria-selected="true"{% endif %}>
 						<a href="{{ site.baseurl }}/docs/developer-guide/circle">CI - Circle CI</a>
 					</li>
+					<li{% if page.title == 'Graphite' %} aria-selected="true"{% endif %}>
+						<a href="{{ site.baseurl }}/docs/developer-guide/graphite">Graphite</a>
+					</li>
 					<li{% if page.title == 'Housekeeping' %} aria-selected="true"{% endif %}>
 						<a href="{{ site.baseurl }}/docs/developer-guide/housekeeping/">Housekeeping</a>
+					</li>
+					<li{% if page.title == 'Measuring Next' %} aria-selected="true"{% endif %}>
+						<a href="{{ site.baseurl }}/docs/developer-guide/measuring-next/">Measuring Next</a>
 					</li>
 					<li{% if page.title == 'Naming conventions' %} aria-selected="true"{% endif %}>
 						<a href="{{ site.baseurl }}/docs/developer-guide/naming-conventions">Naming conventions</a>
@@ -68,9 +89,28 @@
 					<li{% if page.title == 'New Starter' %} aria-selected="true"{% endif %}>
 						<a href="{{ site.baseurl }}/docs/developer-guide/new-starter/">New Starter</a>
 					</li>
+					<li{% if page.title == 'Creating new apps' %} aria-selected="true"{% endif %}>
+						<a href="{{ site.baseurl }}/docs/developer-guide/creating-new-apps/">Creating new apps</a>
+					</li>
 					<li{% if page.title == 'QA' %} aria-selected="true"{% endif %}>
 						<a href="{{ site.baseurl }}/docs/developer-guide/qa/">QA</a>
 					</li>
+					<li{% if page.title == 'Reading list' %} aria-selected="true"{% endif %}>
+						<a href="{{ site.baseurl }}/docs/developer-guide/reading-list/">Reading list</a>
+					</li>
+					<li{% if page.title == 'Security' %} aria-selected="true"{% endif %}>
+						<a href="{{ site.baseurl }}/docs/developer-guide/security/">Security</a>
+					</li>
+					<li{% if page.title == 'Setting up Multi Region Static Hosting' %} aria-selected="true"{% endif %}>
+					<a href="{{ site.baseurl }}/docs/developer-guide/s3-bucket-replication/">Setting up Multi Region Static Hosting</a>
+					</li>
+					<li{% if page.title == 'Setting up Multi Region Apps' %} aria-selected="true"{% endif %}>
+					<a href="{{ site.baseurl }}/docs/developer-guide/multi-region-apps/">Setting up Multi Region Apps</a>
+					</li>
+					<li{% if page.title == 'Troubleshooting' %} aria-selected="true"{% endif %}>
+						<a href="{{ site.baseurl }}/docs/developer-guide/troubleshooting/">Troubleshooting</a>
+					</li>
+
 				</ul>
 
 				{% endif %}

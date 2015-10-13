@@ -19,6 +19,7 @@ Next is the future user-interface of ft.com.
   a specific user need.
 - [An A/B testing framework](https://github.com/Financial-Times/next-ab) to
   help build confidence that our features.
+- A [design vision](http://next.ft.com/__styleguide) and styleguide.
 
 ## Where to start
 

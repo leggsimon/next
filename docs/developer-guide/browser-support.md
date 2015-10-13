@@ -11,7 +11,7 @@ Next uses [the 'Cuts the mustard' approach](http://origami.ft.com/docs/developer
 
 ## Enhanced experience
 
-Currently we support all the browsers with the bright green colour [indicated on this page](http://caniuse.com/#search=matches).  We aim to expand this over time.
+Currently we support all the browsers with either the green or greenish colour [indicated on this page](http://caniuse.com/#search=matches).  We aim to expand this over time.
 
 ## Core experience
 
