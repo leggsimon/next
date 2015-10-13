@@ -86,4 +86,4 @@ If you experience any problems take a look at our [troubleshooting guide](/next/
 	- If releasing a change to an app keep an eye on it in next-radiator and sentry (changes take about 10 minutes to show up due to heroku preboot)
 	- If releasing a component, redeploy an app that consumes it and check the app to see if everything's ok
 
-1. Take all the above with a pinch of salt and trust your judgment :)
+1. Take all the above with a pinch of salt and trust your judgement :)
