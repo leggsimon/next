@@ -75,9 +75,13 @@ If you experience any problems take a look at our [troubleshooting guide](/next/
 1. For more significant changes always ask for a peer review by posting a link on the relevant channel on slack or cc-ing one or more developers in github (some teams also use the github-slack integration). If no-one reviews your code after a while either
 
 	- go and ask somebody directly to do so. Stand next to them tutting and checking your watch if necessary.
-	- review it yourself - the time spent waiting will have given you fresh eyes. If you feel confident everything's OK go ahead and merge because ...
+	- review it yourself - the time spent waiting will have given you fresh eyes. If you feel confident everything's OK go ahead and merge
 
-1. ... It's more important to verify your code works in the wild *after* deploying than it is to get the code approved by somebody *before* deploying. A :+1: does not mean your code actually works so
+1. For larger changes, particularly if they involve changes to more than one repo, consider putting them behind a feature flag (for many user facing changes you should be doing this anyway). This way you and other internal staff can experiment with toggling the feature to see the effect
+
+1. Our test coverage varies from one app to another but in general tests are a valuable thing. If the repo you're working on is already well covered by tests add some to cover your changes too. If its test coverage is poor/non-existent don't let that stop you from making a start by adding some to cover your new code.
+
+1. **It's more important to verify your code works in the wild *after* deploying than it is to get the code approved by somebody *before* deploying**. A :+1: does not mean your code actually works so
 
 	- If releasing a change to an app keep an eye on it in next-radiator and sentry (changes take about 10 minutes to show up due to heroku preboot)
 	- If releasing a component, redeploy an app that consumes it and check the app to see if everything's ok
