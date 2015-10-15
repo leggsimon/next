@@ -45,7 +45,7 @@ The request type is "Infrastructure Request" associated program is "Strategic Pr
 
 When filling in the details be sure to provide the name and region of the source and destination buckets.
 
-##6. Open another ticket in SalesForce to set up an ‘IAM’ user with an access key
+##6. Open another ticket in SalesForce to set up an ‘IAM’ user with an access key and access policy
 
 From SalesForce click __technology self service__ then choose __TECHNOLOGY ONLY requests__ from the menu on the right.
 
