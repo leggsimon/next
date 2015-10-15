@@ -22,7 +22,7 @@ You will also need the heroku pipelines add-on.  Run this command to get it:
 Run `nbt drydock [APP_NAME] -m` to set up a pipeline.  So, if your app is article, run this:
 
     nbt drydock ft-next-article -m
-    
+
 The `-m` option makes it multi-region - you can ignore this if you're just trying to create a pipeline and don't need a US app.
 
 ## 3. Change your Makefile
@@ -40,8 +40,8 @@ And a deploy task which looks like this:
 
     deploy:
         nbt ship -m
-        
-The `-m` option is again for multi-region apps - leave this off if you don't have a US app.  
+
+The `-m` option is again for multi-region apps - leave this off if you don't have a US app.
 
 Also, you no longer need a `tidy` task so change it to this:
 
@@ -53,7 +53,7 @@ Also, you no longer need a `tidy` task so change it to this:
 You will need a variable setup at the top of your Makefile like this:
 
     TEST_APP := "ft-article-branch-${CIRCLE_BUILD_NUM}"
-    
+
 (If you're not using Circle CI you'll need to change the CIRCLE_BUILD_NUM to something else)
 
 Your makefile should have a provision task like this:
@@ -63,12 +63,12 @@ Your makefile should have a provision task like this:
         # smoke tests go here!
 
 And a deploy task:
-    
+
     deploy:
         nbt ship -m
 
 And the standard tidy task
-    
+
     tidy:
         nbt destroy ${TEST_APP}
 
@@ -94,12 +94,12 @@ Change it so it looks like this:
 
     nodes: [
         {
-            region : 'eu',
-            url: 'http://ft-next-my-app-eu.herokuapp.com
+            region : "eu",
+            url: "http://ft-next-my-app-eu.herokuapp.com"
         },
         {
-            region : 'us',
-            url: 'http://ft-next-my-app-us.herokuapp.com
+            region : "us",
+            url: "http://ft-next-my-app-us.herokuapp.com"
         }
     ]
 
