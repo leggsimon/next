@@ -61,7 +61,7 @@ You might like to say this:-
 
 	Many thanks,
 
-##7. Now sit back and wait for the guys in infrastructure to do their things
+##7. Now sit back and wait for the people in infrastructure to do their things
 
 They are normally pretty responsive so it shouldn't take more than a couple of hours.
 
@@ -85,3 +85,9 @@ Follow this template:-
 			}
 		]
 	}
+
+##9. Setup the deploys
+
+Stick the app for CI in config-vars using the ‘bucket’ template and use the following deploy script:-
+
+	nbt deploy-static ./__access_metadata --bucket ft-next-access-metadata --cache-control 'max-age=3600' --content-type 'application/json'
