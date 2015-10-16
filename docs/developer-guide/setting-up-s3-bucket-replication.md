@@ -45,7 +45,7 @@ The request type is "Infrastructure Request" associated program is "Strategic Pr
 
 When filling in the details be sure to provide the name and region of the source and destination buckets.
 
-##6. Open another ticket in SalesForce to set up an ‘IAM’ user with an access key and access policy
+##6. Open another ticket in SalesForce to set up an ‘IAM’ user with an access key
 
 From SalesForce click __technology self service__ then choose __TECHNOLOGY ONLY requests__ from the menu on the right.
 
@@ -55,39 +55,33 @@ The naming convention for the account is the EU bucket name with a `-prod` suffi
 
 You might like to say this:-
 
-	Hi there, Could we have another IAM account with an access key and an access policy set up please?
+	Hi there, Could we have another IAM account with an access key set up please?
 	Username: `ft-next-access-metadata-prod`
 	AWS Account: `InfraProd`
-	Access Policy name: `write-access-metadata-prod`
-	Acccess Policy:
-	
-		{
-			"Statement": [
-				{
-					"Effect": "Allow",
-					"Action": [
-						"s3:ListBucket",
-						"s3:GetBucketLocation",
-						"s3:ListBucketMultipartUploads"
-						"s3:AbortMultipartUpload",
-						"s3:DeleteObject",
-						"s3:DeleteObjectVersion",
-						"s3:GetObject",
-						"s3:GetObjectAcl",
-						"s3:GetObjectVersion",
-						"s3:GetObjectVersionAcl",
-						"s3:PutObject",
-						"s3:PutObjectAcl",
-						"s3:PutObjectAclVersion"
-					],
-					"Resource": "arn:aws:s3:::ft-next-access-metadata-prod/*",
-					"Condition": {}
-				}
-			]
-		}
-	
+
 	Many thanks,
 
 ##7. Now sit back and wait for the guys in infrastructure to do their things
 
 They are normally pretty responsive so it shouldn't take more than a couple of hours.
+
+##8. Set up an access policy for the EU bucket for the newly made IAM account
+
+For the EU bucket only, on the S3 Console click ‘Properties’ then select ‘Permissions’ then select ‘Edit bucket policy’.
+
+Follow this template:-
+
+	{
+		"Version": "2008-10-17",
+		"Statement": [
+			{
+				"Sid": "",
+				"Effect": "Allow",
+				"Principal": {
+					"AWS": "arn:aws:iam::027104099916:user/ft-next-access-metadata-prod"
+				},
+				"Action": "s3:*",
+				"Resource": "arn:aws:s3:::ft-next-access-metadata/*"
+			}
+		]
+	}
